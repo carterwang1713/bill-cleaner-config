@@ -1,0 +1,578 @@
+﻿站点,type,description,匹配辅助列,取值字段,中文意思,账单字段序列,维度,绩效表对应维度
+BE,Commande,,Commande,ventes de produits,商品销售收入,3,订单,订单金额
+BE,Commande,,Commande,crédits d’expédition,运费销售收入,8,订单,订单金额
+BE,Commande,,Commande,crédits d’emballage-cadeau,包装收入,10,订单,订单金额
+BE,Commande,,Commande,Total des réductions,折扣金额,12,订单,订单金额
+BE,Commande,,Commande,taxe de ventes prélevée,已收取的销售税,41,订单,税费
+BE,Commande,,Commande,Taxe Marketplace Facilitator,平台代扣代缴税额,43,订单,税费
+BE,Commande,,Commande,frais de vente,佣金,23,订单,平台佣金
+BE,Commande,,Commande,Frais pour le service Expédié par Amazon,运费,25,订单,尾程派送费
+BE,Commande,,Commande,autres frais de transaction,其他交易费用,27,订单,弃置费/退货手续费/移除费
+BE,Commande,,Commande,autres,其他,25,订单,售后费用
+BE,Frais de service,Coût de la publicité,Frais de service/Coût de la publicité,autres frais de transaction,广告费,36,单维度费用,广告费
+BE,Transférer,,Transférer,total,提现金额,18,单维度费用,
+CA,Adjustment,FBA Inventory Reimbursement - Customer Return,Adjustment/FBA Inventory Reimbursement - Customer Return,toatl,FBA库存赔偿-客户退货,5,单维度费用,索赔
+CA,Adjustment,FBA Inventory Reimbursement - Lost:Warehouse,Adjustment/FBA Inventory Reimbursement - Lost:Warehouse,toatl,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+CA,Adjustment,FBA Inventory Reimbursement - Damaged:Warehouse,Adjustment/FBA Inventory Reimbursement - Damaged:Warehouse,toatl,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+CA,Adjustment,FBA Inventory Reimbursement - General Adjustment,Adjustment/FBA Inventory Reimbursement - General Adjustment,toatl,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+CA,Adjustment,Other,Adjustment/Other,toatl,其他调整,35,单维度费用,售后费用
+CA,FBA Inventory Fee,Fulfilment by Amazon removal order: disposal fee,FBA Inventory Fee/Fulfilment by Amazon removal order: disposal fee,toatl,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+CA,FBA Inventory Fee,FBA storage fee,FBA Inventory Fee/FBA storage fee,toatl,FBA仓储费,29,单维度费用,仓储费
+CA,FBA Inventory Fee,FBA Long-Term Storage Fee,FBA Inventory Fee/FBA Long-Term Storage Fee,toatl,FBA长期仓储费,29,单维度费用,仓储费
+CA,order,,order,product sales,商品销售收入,3,订单,订单金额
+CA,order,,order,product sales tax,商品销售税,41,订单,税费
+CA,order,,order,shipping credits,运费销售收入,8,订单,订单金额
+CA,order,,order,shipping credits tax,运费税,41,订单,税费
+CA,order,,order,gift wrap credits,包装收入,10,订单,订单金额
+CA,order,,order,giftwrap credits tax,包装税,41,订单,税费
+CA,order,,order,Regulatory fee,监管费,待发生此类型金额,订单,弃置费/退货手续费/移除费
+CA,order,,order,Tax on regulatory fee,监管费税,待发生此类型金额,订单,税费
+CA,order,,order,promotional rebates,折扣金额,12,订单,订单金额
+CA,order,,order,promotional rebates tax,折扣税,41,订单,税费
+CA,order,,order,marketplace withheld tax,平台代扣代缴税额,43,订单,税费
+CA,order,,order,selling fees,佣金,23,订单,平台佣金
+CA,order,,order,fba fees,运费,25,订单,尾程派送费
+CA,order,,order,other transaction fees,其他交易费用,27,订单,弃置费/退货手续费/移除费
+CA,order,,order,other,其他,25,订单,售后费用
+CA,Refund,,Refund,product sales,商品销售收入-退货,4,订单,退款金额
+CA,Refund,,Refund,product sales tax,商品销售税-退货,42,订单,税费
+CA,Refund,,Refund,shipping credits,运费销售收入-退货,9,订单,退款金额
+CA,Refund,,Refund,shipping credits tax,运费税-退货,42,订单,税费
+CA,Refund,,Refund,gift wrap credits,包装收入-退货,11,订单,退款金额
+CA,Refund,,Refund,gift wrap credits tax,包装税-退货,42,订单,税费
+CA,Refund,,Refund,Regulatory fee,监管费-退货,待发生此类型金额,订单,弃置费/退货手续费/移除费
+CA,Refund,,Refund,Tax on regulatory fee,监管费税-退货,待发生此类型金额,订单,税费
+CA,Refund,,Refund,promotional rebates,折扣金额-退货,13,订单,退款金额
+CA,Refund,,Refund,promotional rebates tax,折扣税-退货,42,订单,税费
+CA,Refund,,Refund,marketplace withheld tax,平台代扣代缴税额-退货,43,订单,税费
+CA,Refund,,Refund,selling fees,佣金-退货,24,订单,平台佣金
+CA,Refund,,Refund,fba fees,运费-退货,26,订单,尾程派送费
+CA,Refund,,Refund,other transaction fees,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+CA,Refund,,Refund,other,其他-退货,4,订单,售后费用
+CA,Service Fee,Cost of advertising,Service Fee/Cost of advertising,other,广告费,36,单维度费用,广告费
+CA,Service Fee,Subscription,Service Fee/Subscription,other,店铺月租,33,单维度费用,弃置费/退货手续费/移除费
+CA,Service Fee,Coupon Redemption Fee,Service Fee/Coupon Redemption Fee,other,优惠券使用费,33,单维度费用,推广费
+CA,Transfer,,Transfer,total,提现金额,18,单维度费用,
+CA,Chargeback Refund,,Chargeback Refund,product sales,商品销售收入-客户拒付,15,订单,订单金额
+CA,Chargeback Refund,,Chargeback Refund,product sales tax,商品销售税-客户拒付,42,订单,税费
+CA,Chargeback Refund,,Chargeback Refund,shipping credits,运费销售收入-客户拒付,15,订单,订单金额
+CA,Chargeback Refund,,Chargeback Refund,shipping credits tax,运费税-客户拒付,42,订单,税费
+CA,Chargeback Refund,,Chargeback Refund,gift wrap credits,包装收入-客户拒付,15,订单,订单金额
+CA,Chargeback Refund,,Chargeback Refund,gift wrap credits tax,包装税-客户拒付,42,订单,税费
+CA,Chargeback Refund,,Chargeback Refund,Regulatory fee,监管费-客户拒付,15,订单,订单金额
+CA,Chargeback Refund,,Chargeback Refund,Tax on regulatory fee,监管费税-客户拒付,42,订单,税费
+CA,Chargeback Refund,,Chargeback Refund,promotional rebates,折扣金额-客户拒付,15,订单,订单金额
+CA,Chargeback Refund,,Chargeback Refund,promotional rebates tax,折扣税-客户拒付,42,订单,税费
+CA,Chargeback Refund,,Chargeback Refund,marketplace withheld tax,平台代扣代缴税额-客户拒付,43,订单,税费
+CA,Chargeback Refund,,Chargeback Refund,selling fees,佣金-客户拒付,15,订单,平台佣金
+CA,Chargeback Refund,,Chargeback Refund,fba fees,运费-客户拒付,15,订单,尾程派送费
+CA,Chargeback Refund,,Chargeback Refund,other transaction fees,其他交易费用-客户拒付,15,订单,弃置费/退货手续费/移除费
+CA,Chargeback Refund,,Chargeback Refund,other,其他-客户拒付,15,订单,售后费用
+CA,Fee Adjustment,Fee Adjustment – Weight and Dimension Change,Fee Adjustment/Fee Adjustment – Weight and Dimension Change,total,费用调整-重量体积调整,26,单维度费用,弃置费/退货手续费/移除费
+CA,,促销,促销,total,优惠活动服务费,33,单维度费用,推广费
+CA,,,其他交易服务费,total,其他交易服务费,33,单维度费用,弃置费/退货手续费/移除费
+CA,Amazon fees,Coupon participation fee,Amazon fees/Coupon participation fee,total,优惠活动报名费,33,单维度费用,推广费
+CA,Amazon fees,Coupon performance-based fee,Amazon fees/Coupon performance-based fee,total,优惠券点击费,33,单维度费用,推广费
+DE,Anpassung,Versand durch Amazon Erstattung für Lagerbestand - Kundenrücksendung,Anpassung/Versand durch Amazon Erstattung für Lagerbestand - Kundenrücksendung,Gesamt,FBA库存赔偿-客户退货,5,单维度费用,索赔
+DE,Anpassung,Versand durch Amazon Erstattung für Lagerbestand - Im Lager verloren,Anpassung/Versand durch Amazon Erstattung für Lagerbestand - Im Lager verloren,Gesamt,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+DE,Anpassung,Versand durch Amazon Erstattung für Lagerbestand -  Allgemeine Anpassung,Anpassung/Versand durch Amazon Erstattung für Lagerbestand -  Allgemeine Anpassung,Gesamt,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+DE,Anpassung,Versand durch Amazon Erstattung für Lagerbestand - Im Lager beschädigt,Anpassung/Versand durch Amazon Erstattung für Lagerbestand - Im Lager beschädigt,Gesamt,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+DE,Anpassung,Versand durch Amazon Erstattung für Lagerbestand - Verloren bei Auslieferung,Anpassung/Versand durch Amazon Erstattung für Lagerbestand - Verloren bei Auslieferung,Gesamt,FBA库存赔偿-配送中途丢失,35,单维度费用,索赔
+DE,Anpassung,Käufer Wiedereinzug,Anpassung/Käufer Wiedereinzug,Gesamt,客户货款追回,46,单维度费用,售后费用
+DE,Anpassung,Versand durch Amazon Erstattung für Lagerbestand -  Gebührenkorrektur,Anpassung/Versand durch Amazon Erstattung für Lagerbestand -  Gebührenkorrektur,Gesamt,FBA库存赔偿-费用调整,5,单维度费用,索赔
+DE,Bestellung,,Bestellung,Umsätze,商品销售收入,3,订单,订单金额
+DE,Bestellung,,Bestellung,Produktumsatzsteuer,商品销售税,41,订单,税费
+DE,Bestellung,,Bestellung,Gutschrift für Versandkosten,运费销售收入,8,订单,订单金额
+DE,Bestellung,,Bestellung,Steuer auf Versandgutschrift,运费税,41,订单,税费
+DE,Bestellung,,Bestellung,Gutschrift für Geschenkverpackung,包装收入,10,订单,订单金额
+DE,Bestellung,,Bestellung,Steuer auf Geschenkverpackungsgutschriften,包装税,41,订单,税费
+DE,Bestellung,,Bestellung,Rabatte aus Werbeaktionen,折扣金额,12,订单,订单金额
+DE,Bestellung,,Bestellung,Steuer auf Aktionsrabatte,折扣税,41,订单,税费
+DE,Bestellung,,Bestellung,Einbehaltene Steuer auf Marketplace,平台代扣代缴税额,43,订单,税费
+DE,Bestellung,,Bestellung,Verkaufsgebühren,佣金,23,订单,平台佣金
+DE,Bestellung,,Bestellung,Gebühren zu Versand durch Amazon,运费,25,订单,尾程派送费
+DE,Bestellung,,Bestellung,Andere Transaktionsgebühren,其他交易费用,27,订单,弃置费/退货手续费/移除费
+DE,Bestellung,,Bestellung,Andere,其他,25,订单,售后费用
+DE,Bestellung_Wiedereinzug,,Bestellung_Wiedereinzug,Gesamt,订单追加费-商品税,41,多维度费用,税费
+DE,Bestellung_Wiedereinzug,,Bestellung_Wiedereinzug,Gesamt,订单追加费-运费税,41,多维度费用,税费
+DE,Bestellung_Wiedereinzug,,Bestellung_Wiedereinzug,Gesamt,订单追加费-平台代扣代缴税额,43,多维度费用,税费
+DE,Erstattung,,Erstattung,Umsätze,商品销售收入-退货,4,订单,退款金额
+DE,Erstattung,,Erstattung,Produktumsatzsteuer,商品销售税-退货,42,订单,税费
+DE,Erstattung,,Erstattung,Gutschrift für Versandkosten,运费销售收入-退货,9,订单,退款金额
+DE,Erstattung,,Erstattung,Steuer auf Versandgutschrift,运费税-退货,42,订单,税费
+DE,Erstattung,,Erstattung,Gutschrift für Geschenkverpackung,包装收入-退货,11,订单,退款金额
+DE,Erstattung,,Erstattung,Steuer auf Geschenkverpackungsgutschriften,包装税-退货,42,订单,税费
+DE,Erstattung,,Erstattung,Rabatte aus Werbeaktionen,折扣金额-退货,13,订单,退款金额
+DE,Erstattung,,Erstattung,Steuer auf Aktionsrabatte,折扣税-退货,42,订单,税费
+DE,Erstattung,,Erstattung,Einbehaltene Steuer auf Marketplace,平台代扣代缴税额-退货,43,订单,税费
+DE,Erstattung,,Erstattung,Verkaufsgebühren,佣金-退货,24,订单,平台佣金
+DE,Erstattung,,Erstattung,Gebühren zu Versand durch Amazon,运费-退货,26,订单,尾程派送费
+DE,Erstattung,,Erstattung,Andere Transaktionsgebühren,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+DE,Erstattung,,Erstattung,Andere,其他-退货,4,订单,售后费用
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Umsätze,商品销售收入-客户拒付,15,订单,订单金额
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Produktumsatzsteuer,商品销售税-客户拒付,42,订单,税费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Gutschrift für Versandkosten,运费销售收入-客户拒付,15,订单,订单金额
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Steuer auf Versandgutschrift,运费税-客户拒付,42,订单,税费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Gutschrift für Geschenkverpackung,包装收入-客户拒付,15,订单,订单金额
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Steuer auf Geschenkverpackungsgutschriften,包装税-客户拒付,42,订单,税费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Rabatte aus Werbeaktionen,折扣金额-客户拒付,15,订单,订单金额
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Steuer auf Aktionsrabatte,折扣税-客户拒付,42,订单,税费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Einbehaltene Steuer auf Marketplace,平台代扣代缴税额-客户拒付,43,订单,税费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Verkaufsgebühren,佣金-客户拒付,15,订单,平台佣金
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Gebühren zu Versand durch Amazon,运费-客户拒付,15,订单,尾程派送费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Andere Transaktionsgebühren,其他交易费用-客户拒付,15,订单,弃置费/退货手续费/移除费
+DE,Erstattung durch Rückbuchung,,Erstattung durch Rückbuchung,Andere,其他-客户拒付,15,订单,售后费用
+DE,Erstattung_Wiedereinzug,,Erstattung_Wiedereinzug,Gesamt,退款追加费-商品税,42,多维度费用,税费
+DE,Erstattung_Wiedereinzug,,Erstattung_Wiedereinzug,Gesamt,退款追加费-运费税,42,多维度费用,税费
+DE,Erstattung_Wiedereinzug,,Erstattung_Wiedereinzug,Gesamt,退款追加费-平台代扣代缴税额,43,多维度费用,税费
+DE,Gebühren von Amazon,Coupon-Teilnahmegebühr,Gebühren von Amazon/Coupon-Teilnahmegebühr,Gesamt,优惠活动报名费,33,单维度费用,推广费
+DE,Gebühren von Amazon,Leistungsbasierte Coupon-Gebühr,Gebühren von Amazon/Leistungsbasierte Coupon-Gebühr,Gesamt,优惠券点击费,33,单维度费用,推广费
+DE,Gebühren von Amazon,Teilnahmegebühr für das Angebot,Gebühren von Amazon/Teilnahmegebühr für das Angebot,Gesamt,秒杀活动报名费,33,单维度费用,推广费
+DE,Gebühren von Amazon,Leistungsbasierte Angebotsgebühr,Gebühren von Amazon/Leistungsbasierte Angebotsgebühr,Gesamt,秒杀活动服务费,33,单维度费用,推广费
+DE,Gebühren von Amazon,Vine-Registrierungsgebühr,Gebühren von Amazon/Vine-Registrierungsgebühr,Gesamt,好评活动注册费,33,单维度费用,推广费
+DE,Liquidationen,,Liquidationen,Umsätze,清仓-收入,6,多维度费用,订单金额
+DE,Liquidationen,,Liquidationen,Produktumsatzsteuer,清仓-税费,41,多维度费用,税费
+DE,Liquidationen,,Liquidationen,,清仓-平台代扣代缴税额,43,多维度费用,税费
+DE,Liquidationen,,Liquidationen,Andere Transaktionsgebühren,清仓-服务费,38,多维度费用,弃置费/退货手续费/移除费
+DE,Liquidationsanpassungen,,Liquidationsanpassungen,Umsätze,清仓-收入调整,7,多维度费用,订单金额
+DE,Liquidationsanpassungen,,Liquidationsanpassungen,Produktumsatzsteuer,清仓-税费调整,41,多维度费用,税费
+DE,Liquidationsanpassungen,,Liquidationsanpassungen,,清仓-平台代扣代缴税额调整,43,多维度费用,税费
+DE,Liquidationsanpassungen,,Liquidationsanpassungen,Andere Transaktionsgebühren,清仓-服务费调整,38,多维度费用,弃置费/退货手续费/移除费
+DE,Servicegebühr,Werbekosten,Servicegebühr/Werbekosten,Gesamt,广告费,36,单维度费用,广告费
+DE,Servicegebühr,Coupon-Einlösungsgebühr,Servicegebühr/Coupon-Einlösungsgebühr,Gesamt,优惠活动服务费,33,单维度费用,推广费
+DE,Transaktionsgebühren für Versand durch Amazon,"""Versand durch Amazon""-Gebühr für Kundenrücksendungen","Transaktionsgebühren für Versand durch Amazon/""Versand durch Amazon""-Gebühr für Kundenrücksendungen",Gesamt,FBA退货服务费,29,单维度费用,售后费用
+DE,Versand durch Amazon Lagergebühr,FBA-Lagergebühr,Versand durch Amazon Lagergebühr/FBA-Lagergebühr,Gesamt,FBA仓储费,29,单维度费用,仓储费
+DE,Versand durch Amazon Lagergebühr,Versand durch Amazon Langzeitlagergebühr,Versand durch Amazon Lagergebühr/Versand durch Amazon Langzeitlagergebühr,Gesamt,FBA长期仓储费,29,单维度费用,仓储费
+DE,Versand durch Amazon Lagergebühr,Versand durch Amazon Gebühr für Entsorgung,Versand durch Amazon Lagergebühr/Versand durch Amazon Gebühr für Entsorgung,Gesamt,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+DE,Versand durch Amazon Lagergebühr,Capacity Reservation Fee,Versand durch Amazon Lagergebühr/Capacity Reservation Fee,Gesamt,FBA仓储超量费,待发生此类型金额,单维度费用,仓储费
+DE,Übertrag,,Übertrag,Gesamt,提现金额,18,单维度费用,
+ES,Ajuste,Reembolso de inventario - extraviado en el almacén,Ajuste/Reembolso de inventario - extraviado en el almacén,total,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+ES,Ajuste,Reembolso de inventario de Logística de Amazon (Devolución del cliente),Ajuste/Reembolso de inventario de Logística de Amazon (Devolución del cliente),total,FBA库存赔偿-客户退货,5,单维度费用,索赔
+ES,Ajuste,Reembolso de inventario - ajuste general,Ajuste/Reembolso de inventario - ajuste general,total,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+ES,Cargo retroactivo,,Cargo retroactivo,impuesto de ventas de productos,订单追加费-商品税,41,多维度费用,税费
+ES,Cargo retroactivo,,Cargo retroactivo,impuestos por abonos de envío,订单追加费-运费税,41,多维度费用,税费
+ES,Cargo retroactivo,,Cargo retroactivo,impuesto retenido en el sitio web,订单追加费-平台代扣代缴税额,43,多维度费用,税费
+ES,Pedido,,Pedido,ventas de productos,商品销售收入,3,订单,订单金额
+ES,Pedido,,Pedido,impuesto de ventas de productos,商品销售税,41,订单,税费
+ES,Pedido,,Pedido,abonos de envío,运费销售收入,8,订单,订单金额
+ES,Pedido,,Pedido,impuestos por abonos de envío,运费税,41,订单,税费
+ES,Pedido,,Pedido,abonos de envoltorio para regalo,包装收入,10,订单,订单金额
+ES,Pedido,,Pedido,impuestos por abonos de envoltorio para regalo,包装税,41,订单,税费
+ES,Pedido,,Pedido,devoluciones promocionales,折扣金额,12,订单,订单金额
+ES,Pedido,,Pedido,impuestos de descuentos por promociones,折扣税,41,订单,税费
+ES,Pedido,,Pedido,impuesto retenido en el sitio web,平台代扣代缴税额,43,订单,税费
+ES,Pedido,,Pedido,tarifas de venta,佣金,23,订单,平台佣金
+ES,Pedido,,Pedido,tarifas de Logística de Amazon,运费,25,订单,尾程派送费
+ES,Pedido,,Pedido,tarifas de otras transacciones,其他交易费用,27,订单,弃置费/退货手续费/移除费
+ES,Pedido,,Pedido,otro,其他,25,订单,售后费用
+ES,Reembolso,,Reembolso,ventas de productos,商品销售收入-退货,4,订单,退款金额
+ES,Reembolso,,Reembolso,impuesto de ventas de productos,商品销售税-退货,42,订单,税费
+ES,Reembolso,,Reembolso,abonos de envío,运费销售收入-退货,9,订单,退款金额
+ES,Reembolso,,Reembolso,impuestos por abonos de envío,运费税-退货,42,订单,税费
+ES,Reembolso,,Reembolso,abonos de envoltorio para regalo,包装收入-退货,11,订单,退款金额
+ES,Reembolso,,Reembolso,impuestos por abonos de envoltorio para regalo,包装税-退货,42,订单,税费
+ES,Reembolso,,Reembolso,devoluciones promocionales,折扣金额-退货,13,订单,退款金额
+ES,Reembolso,,Reembolso,impuestos de descuentos por promociones,折扣税-退货,42,订单,税费
+ES,Reembolso,,Reembolso,impuesto retenido en el sitio web,平台代扣代缴税额-退货,43,订单,税费
+ES,Reembolso,,Reembolso,tarifas de venta,佣金-退货,24,订单,平台佣金
+ES,Reembolso,,Reembolso,tarifas de Logística de Amazon,运费-退货,26,订单,尾程派送费
+ES,Reembolso,,Reembolso,tarifas de otras transacciones,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+ES,Reembolso,,Reembolso,otro,其他-退货,4,订单,售后费用
+ES,Refund_Retrocharge,,Refund_Retrocharge,impuesto de ventas de productos,订单追加费-商品税,41,多维度费用,税费
+ES,Refund_Retrocharge,,Refund_Retrocharge,impuestos por abonos de envío,订单追加费-运费税,41,多维度费用,税费
+ES,Refund_Retrocharge,,Refund_Retrocharge,impuesto retenido en el sitio web,订单追加费-平台代扣代缴税额,43,多维度费用,税费
+ES,Tarifa de prestación de servicio,Gastos de publicidad,Tarifa de prestación de servicio/Gastos de publicidad,total,广告费,36,单维度费用,广告费
+ES,Tarifas de Amazon,Tarifa basada en el rendimiento del cupón,Tarifas de Amazon/Tarifa basada en el rendimiento del cupón,total,优惠券点击费,33,单维度费用,推广费
+ES,Tarifas de Amazon,Tarifa de participación en el cupón,Tarifas de Amazon/Tarifa de participación en el cupón,total,优惠活动报名费,33,单维度费用,推广费
+ES,Tarifas de Amazon,Tarifa basada en el rendimiento de la oferta,Tarifas de Amazon/Tarifa basada en el rendimiento de la oferta,total,好评活动报名费,33,单维度费用,推广费
+ES,Tarifas de Amazon,Tarifa de participación en la oferta,Tarifas de Amazon/Tarifa de participación en la oferta,total,好评活动服务费,33,单维度费用,推广费
+ES,Tarifas de Amazon,Tarifa de registro en Vine,Tarifas de Amazon/Tarifa de registro en Vine,total,好评活动注册费,33,单维度费用,推广费
+ES,Tarifas de inventario de Logística de Amazon,Tarifa por eliminación de inventario,Tarifas de inventario de Logística de Amazon/Tarifa por eliminación de inventario,total,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+ES,Tarifas de inventario de Logística de Amazon,Tarifa por almacenamiento de Logística de Amazon,Tarifas de inventario de Logística de Amazon/Tarifa por almacenamiento de Logística de Amazon,total,FBA仓储费,29,单维度费用,仓储费
+ES,Tarifas de inventario de Logística de Amazon,Tarifa por almacenamiento prolongado,Tarifas de inventario de Logística de Amazon/Tarifa por almacenamiento prolongado,total,FBA长期仓储费,29,单维度费用,仓储费
+ES,Tarifas de inventario de Logística de Amazon,Capacity Reservation Fee,Tarifas de inventario de Logística de Amazon/Capacity Reservation Fee,total,FBA仓储超量费,待发生此类型金额,单维度费用,仓储费
+ES,Tarifas de transacción de Logística de Amazon,,Tarifas de transacción de Logística de Amazon,total,FBA配送费,25,单维度费用,尾程派送费
+ES,Transferir,,Transferir,total,提现金额,18,单维度费用,
+FR,Ajustement,Remboursement Stock Expédié par Amazon - Retour Client,Ajustement/Remboursement Stock Expédié par Amazon - Retour Client,total,FBA库存赔偿-客户退货,5,单维度费用,索赔
+FR,Ajustement,Remboursement Stock Expédié par Amazon - Correction de frais,Ajustement/Remboursement Stock Expédié par Amazon - Correction de frais,total,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+FR,Ajustement,Remboursement Stock Expédié par Amazon - Perdu:entrepôt,Ajustement/Remboursement Stock Expédié par Amazon - Perdu:entrepôt,total,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+FR,Ajustement,Remboursement Stock Expédié par Amazon - Ajustement général,Ajustement/Remboursement Stock Expédié par Amazon - Ajustement général,total,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+FR,Ajustement,Remboursement Stock Expédié par Amazon - Endommagé:entrepôt,Ajustement/Remboursement Stock Expédié par Amazon - Endommagé:entrepôt,total,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+FR,Amazon Fees,Frais basés sur les performances des coupons,Amazon Fees/Frais basés sur les performances des coupons,total,优惠券点击费,33,单维度费用,推广费
+FR,Amazon Fees,Frais de participation au coupon,Amazon Fees/Frais de participation au coupon,total,优惠活动报名费,33,单维度费用,推广费
+FR,Amazon Fees,Frais de participation à une offre promotionnelle,Amazon Fees/Frais de participation à une offre promotionnelle,total,促销活动服务费,33,单维度费用,推广费
+FR,Amazon Fees,Frais basés sur les performances des offres promotionnelles,Amazon Fees/Frais basés sur les performances des offres promotionnelles,total,促销活动报名费,33,单维度费用,推广费
+FR,Amazon Fees,Frais d’inscription à Amazon Vine,Amazon Fees/Frais d’inscription à Amazon Vine,total,好评活动注册费,33,单维度费用,推广费
+FR,Commande,,Commande,ventes de produits,商品销售收入,3,订单,订单金额
+FR,Commande,,Commande,Taxes sur la vente des produits,商品销售税,41,订单,税费
+FR,Commande,,Commande,crédits d'expédition,运费销售收入,8,订单,订单金额
+FR,Commande,,Commande,taxe sur les crédits d’expédition,运费税,41,订单,税费
+FR,Commande,,Commande,crédits sur l'emballage cadeau,包装收入,10,订单,订单金额
+FR,Commande,,Commande,Taxes sur les crédits cadeaux,包装税,41,订单,税费
+FR,Commande,,Commande,Rabais promotionnels,折扣金额,12,订单,订单金额
+FR,Commande,,Commande,Taxes sur les remises promotionnelles,折扣税,41,订单,税费
+FR,Commande,,Commande,Taxes retenues sur le site de vente,平台代扣代缴税额,43,订单,税费
+FR,Commande,,Commande,frais de vente,佣金,23,订单,平台佣金
+FR,Commande,,Commande,Frais Expédié par Amazon,运费,25,订单,尾程派送费
+FR,Commande,,Commande,autres frais de transaction,其他交易费用,27,订单,弃置费/退货手续费/移除费
+FR,Commande,,Commande,autre,其他,25,订单,售后费用
+FR,Frais de service,Prix de la publicité,Frais de service/Prix de la publicité,total,广告费,36,单维度费用,广告费
+FR,Frais de stock Expédié par Amazon,Frais de stockage FBA,Frais de stock Expédié par Amazon/Frais de stockage FBA,total,FBA仓储费,29,单维度费用,仓储费
+FR,Frais de stock Expédié par Amazon,Frais de Stockage de longue durée Expédié par Amazon,Frais de stock Expédié par Amazon/Frais de Stockage de longue durée Expédié par Amazon,total,FBA长期仓储费,29,单维度费用,仓储费
+FR,Frais de stock Expédié par Amazon,Frais de disposition Expédié par Amazon,Frais de stock Expédié par Amazon/Frais de disposition Expédié par Amazon,total,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+FR,Frais de transaction Expédié par Amazon,,Frais de transaction Expédié par Amazon,total,FBA配送费,25,单维度费用,尾程派送费
+FR,Frais de stock Expédié par Amazon,Capacity Reservation Fee,Frais de stock Expédié par Amazon/Capacity Reservation Fee,total,FBA仓储超量费,待发生此类型金额,单维度费用,仓储费
+FR,Frais de service,EPR Pay-on-behalf,Frais de service/EPR Pay-on-behalf,total,其他服务费-ERP费用,33,单维度费用,推广费
+FR,Frais de service,coupon,Frais de service/coupon,total,优惠活动服务费,33,单维度费用,推广费
+FR,Remboursement,,Remboursement,ventes de produits,商品销售收入-退货,4,订单,退款金额
+FR,Remboursement,,Remboursement,Taxes sur la vente des produits,商品销售税-退货,42,订单,税费
+FR,Remboursement,,Remboursement,crédits d'expédition,运费销售收入-退货,9,订单,退款金额
+FR,Remboursement,,Remboursement,taxe sur les crédits d’expédition,运费税-退货,42,订单,税费
+FR,Remboursement,,Remboursement,crédits sur l'emballage cadeau,包装收入-退货,11,订单,退款金额
+FR,Remboursement,,Remboursement,Taxes sur les crédits cadeaux,包装税-退货,42,订单,税费
+FR,Remboursement,,Remboursement,Rabais promotionnels,折扣金额-退货,13,订单,退款金额
+FR,Remboursement,,Remboursement,Taxes sur les remises promotionnelles,折扣税-退货,42,订单,税费
+FR,Remboursement,,Remboursement,Taxes retenues sur le site de vente,平台代扣代缴税额-退货,43,订单,税费
+FR,Remboursement,,Remboursement,frais de vente,佣金-退货,24,订单,平台佣金
+FR,Remboursement,,Remboursement,Frais Expédié par Amazon,运费-退货,26,订单,尾程派送费
+FR,Remboursement,,Remboursement,autres frais de transaction,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+FR,Remboursement,,Remboursement,autre,其他-退货,4,订单,售后费用
+FR,Transfert,,Transfert,total,提现金额,18,单维度费用,
+IE,Transfer,,Transfer,total,提现金额,18,单维度费用,
+IT,Commissione di servizio,Costo della pubblicità,Commissione di servizio/Costo della pubblicità,totale,广告费,36,单维度费用,广告费
+IT,Commissioni per le transazioni di Logistica di Amazon,,Commissioni per le transazioni di Logistica di Amazon,totale,FBA配送交易服务费,25,单维度费用,尾程派送费
+IT,Costo di stoccaggio Logistica di Amazon,Tariffa per mettere l'inventario a disposizione di Amazon,Costo di stoccaggio Logistica di Amazon/Tariffa per mettere l'inventario a disposizione di Amazon,totale,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+IT,Costo di stoccaggio Logistica di Amazon,Tariffa di stoccaggio di Logistica di Amazon,Costo di stoccaggio Logistica di Amazon/Tariffa di stoccaggio di Logistica di Amazon,totale,FBA仓储费,29,单维度费用,仓储费
+IT,Costo di stoccaggio Logistica di Amazon,Tariffa di stoccaggio a lungo termine Logistica di Amazon,Costo di stoccaggio Logistica di Amazon/Tariffa di stoccaggio a lungo termine Logistica di Amazon,totale,FBA长期仓储费,29,单维度费用,仓储费
+IT,Costo di stoccaggio Logistica di Amazon,Capacity Reservation Fee,Costo di stoccaggio Logistica di Amazon/Capacity Reservation Fee,totale,FBA仓储超量费,待发生此类型金额,单维度费用,仓储费
+IT,Modifica,Rimborso inventario Logistica di Amazon. Reso cliente,Modifica/Rimborso inventario Logistica di Amazon. Reso cliente,totale,FBA库存赔偿-客户退货,5,单维度费用,索赔
+IT,Modifica,Rimborso inventario Logistica di Amazon. Smarrito in magazzino,Modifica/Rimborso inventario Logistica di Amazon. Smarrito in magazzino,totale,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+IT,Modifica,Rimborso inventario Logistica di Amazon. Danneggiato in magazzino,Modifica/Rimborso inventario Logistica di Amazon. Danneggiato in magazzino,totale,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+IT,Modifica,Rimborso inventario Logistica di Amazon. Aggiustamento generale,Modifica/Rimborso inventario Logistica di Amazon. Aggiustamento generale,totale,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+IT,Order_Retrocharge,,Order_Retrocharge,imposta sulle vendite dei prodotti,订单追加费-商品税,41,多维度费用,税费
+IT,Order_Retrocharge,,Order_Retrocharge,imposta accrediti per le spedizioni,订单追加费-运费税,41,多维度费用,税费
+IT,Order_Retrocharge,,Order_Retrocharge,trattenuta IVA del marketplace,订单追加费-平台代扣代缴税额,43,多维度费用,税费
+IT,Ordine,,Ordine,Vendite,商品销售收入,3,订单,订单金额
+IT,Ordine,,Ordine,imposta sulle vendite dei prodotti,商品销售税,41,订单,税费
+IT,Ordine,,Ordine,Accrediti per le spedizioni,运费销售收入,8,订单,订单金额
+IT,Ordine,,Ordine,imposta accrediti per le spedizioni,运费税,41,订单,税费
+IT,Ordine,,Ordine,Accrediti per confezioni regalo,包装收入,10,订单,订单金额
+IT,Ordine,,Ordine,imposta sui crediti confezione regalo,包装税,41,订单,税费
+IT,Ordine,,Ordine,Sconti promozionali,折扣金额,12,订单,订单金额
+IT,Ordine,,Ordine,imposta sugli sconti promozionali,折扣税,41,订单,税费
+IT,Ordine,,Ordine,trattenuta IVA del marketplace,平台代扣代缴税额,43,订单,税费
+IT,Ordine,,Ordine,Commissioni di vendita,佣金,23,订单,平台佣金
+IT,Ordine,,Ordine,Costi del servizio Logistica di Amazon,运费,25,订单,尾程派送费
+IT,Ordine,,Ordine,Altri costi relativi alle transazioni,其他交易费用,27,订单,弃置费/退货手续费/移除费
+IT,Ordine,,Ordine,Altro,其他,25,订单,售后费用
+IT,Rimborso,,Rimborso,Vendite,商品销售收入-退货,4,订单,退款金额
+IT,Rimborso,,Rimborso,imposta sulle vendite dei prodotti,商品销售税-退货,42,订单,税费
+IT,Rimborso,,Rimborso,Accrediti per le spedizioni,运费销售收入-退货,9,订单,退款金额
+IT,Rimborso,,Rimborso,imposta accrediti per le spedizioni,运费税-退货,42,订单,税费
+IT,Rimborso,,Rimborso,Accrediti per confezioni regalo,包装收入-退货,11,订单,退款金额
+IT,Rimborso,,Rimborso,imposta sui crediti confezione regalo,包装税-退货,42,订单,税费
+IT,Rimborso,,Rimborso,Sconti promozionali,折扣金额-退货,13,订单,退款金额
+IT,Rimborso,,Rimborso,imposta sugli sconti promozionali,折扣税-退货,42,订单,税费
+IT,Rimborso,,Rimborso,trattenuta IVA del marketplace,平台代扣代缴税额-退货,43,订单,税费
+IT,Rimborso,,Rimborso,Commissioni di vendita,佣金-退货,24,订单,平台佣金
+IT,Rimborso,,Rimborso,Costi del servizio Logistica di Amazon,运费-退货,26,订单,尾程派送费
+IT,Rimborso,,Rimborso,Altri costi relativi alle transazioni,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+IT,Rimborso,,Rimborso,Altro,其他-退货,4,订单,售后费用
+IT,Tariffe e commissioni Amazon,Commissione basata sulla performance del coupon,Tariffe e commissioni Amazon/Commissione basata sulla performance del coupon,totale,优惠券点击费,33,单维度费用,推广费
+IT,Tariffe e commissioni Amazon,Commissione di partecipazione ai coupon,Tariffe e commissioni Amazon/Commissione di partecipazione ai coupon,totale,优惠活动报名费,33,单维度费用,推广费
+IT,Tariffe e commissioni Amazon,Commissione di partecipazione all'offerta,Tariffe e commissioni Amazon/Commissione di partecipazione all'offerta,totale,促销活动服务费,33,单维度费用,推广费
+IT,Tariffe e commissioni Amazon,Commissione basata sulla performance dell'offerta,Tariffe e commissioni Amazon/Commissione basata sulla performance dell'offerta,totale,促销活动报名费,33,单维度费用,推广费
+IT,Trasferimento,,Trasferimento,totale,提现金额,18,单维度费用,
+JP,Amazon手数料,クーポンのパフォーマンスベースに基づく手数料,Amazon手数料/クーポンのパフォーマンスベースに基づく手数料,合計,优惠券点击费,33,单维度费用,推广费
+JP,Amazon手数料,クーポンを提供する際の手数料,Amazon手数料/クーポンを提供する際の手数料,合計,优惠活动报名费,33,单维度费用,推广费
+JP,Amazon手数料,タイムセールのパフォーマンスに基づく手数料,Amazon手数料/タイムセールのパフォーマンスに基づく手数料,合計,秒杀活动服务费,33,单维度费用,推广费
+JP,Amazon手数料,タイムセールを提供する際の手数料,Amazon手数料/タイムセールを提供する際の手数料,合計,秒杀活动报名费,33,单维度费用,推广费
+JP,FBA 在庫関連の手数料,FBA在庫の返送手数料,FBA 在庫関連の手数料/FBA在庫の返送手数料,合計,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+JP,FBA 在庫関連の手数料,FBA在庫保管手数料:,FBA 在庫関連の手数料/FBA在庫保管手数料:,合計,FBA仓储费,29,单维度费用,仓储费
+JP,FBA 在庫関連の手数料,FBA長期在庫保管手数料,FBA 在庫関連の手数料/FBA長期在庫保管手数料,合計,FBA长期仓储费,29,单维度费用,仓储费
+JP,FBA 在庫関連の手数料,FBA在庫の廃棄手数料,FBA 在庫関連の手数料/FBA在庫の廃棄手数料,合計,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+JP,FBA 在庫関連の手数料 - 取り消し,FBA在庫保管手数料:,FBA 在庫関連の手数料 - 取り消し/FBA在庫保管手数料:,合計,FBA仓储费-取消,29,单维度费用,仓储费
+JP,FBA 在庫関連の手数料 - 訂正,FBA在庫保管手数料:,FBA 在庫関連の手数料 - 訂正/FBA在庫保管手数料:,合計,FBA仓储费-调整,29,单维度费用,仓储费
+JP,調整,FBA在庫の返金 - 購入者による返品:,調整/FBA在庫の返金 - 購入者による返品:,合計,FBA库存赔偿-客户退货,5,单维度费用,索赔
+JP,調整,FBA在庫の返金 - 紛失: フルフィルメントセンター:,調整/FBA在庫の返金 - 紛失: フルフィルメントセンター:,合計,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+JP,調整,FBA在庫の返金 - 紛失: 出荷時:,調整/FBA在庫の返金 - 紛失: 出荷時:,合計,FBA库存赔偿-出运丢失,46,单维度费用,索赔
+JP,調整,購入者の再課金：,調整/購入者の再課金：,合計,客户货款追回,46,单维度费用,售后费用
+JP,調整,FBA在庫の返金 - 紛失: フルフィルメントセンター,調整/FBA在庫の返金 - 紛失: フルフィルメントセンター,合計,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+JP,返金,,返金,商品売上,商品销售收入-退货,4,订单,退款金额
+JP,返金,,返金,商品の売上税,商品销售税-退货,42,订单,税费
+JP,返金,,返金,配送料,运费销售收入-退货,9,订单,退款金额
+JP,返金,,返金,配送料の税金,运费税-退货,42,订单,税费
+JP,返金,,返金,ギフト包装手数料,包装收入-退货,11,订单,退款金额
+JP,返金,,返金,ギフト包装クレジットの税金,包装税-退货,42,订单,税费
+JP,返金,,返金,Amazonポイントの費用,亚马逊积分费用-退货,45,订单,弃置费/退货手续费/移除费
+JP,返金,,返金,プロモーション割引額,折扣金额-退货,13,订单,退款金额
+JP,返金,,返金,プロモーション割引の税金,折扣税-退货,42,订单,税费
+JP,返金,,返金,源泉徴収税を伴うマーケットプレイス,平台代扣代缴税额-退货,43,订单,税费
+JP,返金,,返金,手数料,佣金-退货,24,订单,平台佣金
+JP,返金,,返金,FBA 手数料,运费-退货,26,订单,尾程派送费
+JP,返金,,返金,トランザクションに関するその他の手数料,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+JP,返金,,返金,その他,其他-退货-日本,46,订单,售后费用
+JP,振込み,,振込み,合計,提现金额,18,单维度费用,
+JP,注文,,注文,商品売上,商品销售收入,3,订单,订单金额
+JP,注文,,注文,商品の売上税,商品销售税,41,订单,税费
+JP,注文,,注文,配送料,运费销售收入,8,订单,订单金额
+JP,注文,,注文,配送料の税金,运费税,41,订单,税费
+JP,注文,,注文,ギフト包装手数料,包装收入,10,订单,订单金额
+JP,注文,,注文,ギフト包装クレジットの税金,包装税,41,订单,税费
+JP,注文,,注文,Amazonポイントの費用,亚马逊积分费用,44,订单,弃置费/退货手续费/移除费
+JP,注文,,注文,プロモーション割引額,折扣金额,12,订单,订单金额
+JP,注文,,注文,プロモーション割引の税金,折扣税,41,订单,税费
+JP,注文,,注文,源泉徴収税を伴うマーケットプレイス,平台代扣代缴税额,43,订单,税费
+JP,注文,,注文,手数料,佣金,23,订单,平台佣金
+JP,注文,,注文,FBA 手数料,运费,25,订单,尾程派送费
+JP,注文,,注文,トランザクションに関するその他の手数料,其他交易费用,27,订单,弃置费/退货手续费/移除费
+JP,注文,,注文,その他,其他,25,订单,售后费用
+JP,注文外料金,広告費用,注文外料金/広告費用,合計,广告费,36,单维度费用,广告费
+JP,注文外料金,月額登録料,注文外料金/月額登録料,合計,店铺月租,33,单维度费用,弃置费/退货手续费/移除费
+JP,注文外料金,クーポン償還手数料,注文外料金/クーポン償還手数料,合計,优惠活动服务费,33,单维度费用,推广费
+NL,Aanpassing,Terugbetaling voor voorraad bij FBA - Retourzending klant,Aanpassing/Terugbetaling voor voorraad bij FBA - Retourzending klant,totaal,FBA库存赔偿-客户退货,5,单维度费用,索赔
+NL,Bestelling,,Bestelling,verkoop van producten,商品销售收入,3,订单,订单金额
+NL,Bestelling,,Bestelling,Verzendtegoeden,运费销售收入,8,订单,订单金额
+NL,Bestelling,,Bestelling,kredietpunten cadeauverpakking,包装收入,10,订单,订单金额
+NL,Bestelling,,Bestelling,promotiekortingen,折扣金额,12,订单,订单金额
+NL,Bestelling,,Bestelling,geïnde omzetbelasting,已收取的销售税,41,订单,税费
+NL,Bestelling,,Bestelling,Belasting voor marketplace-facilitator,平台代扣代缴税额,43,订单,税费
+NL,Bestelling,,Bestelling,verkoopkosten,佣金,23,订单,平台佣金
+NL,Bestelling,,Bestelling,fba-vergoedingen,运费,25,订单,尾程派送费
+NL,Bestelling,,Bestelling,overige transactiekosten,其他交易费用,27,订单,弃置费/退货手续费/移除费
+NL,Bestelling,,Bestelling,overige,其他,25,订单,售后费用
+NL,Overboeking,,Overboeking,totaal,提现金额,18,单维度费用,
+NL,Servicekosten,Kosten van reclame,Servicekosten/Kosten van reclame,totaal,广告费,36,单维度费用,广告费
+NL,Terugbetaling,,Terugbetaling,verkoop van producten,商品销售收入-退货,4,订单,退款金额
+NL,Terugbetaling,,Terugbetaling,Verzendtegoeden,运费销售收入-退货,9,订单,退款金额
+NL,Terugbetaling,,Terugbetaling,kredietpunten cadeauverpakking,包装收入-退货,11,订单,退款金额
+NL,Terugbetaling,,Terugbetaling,promotiekortingen,折扣金额-退货,13,订单,退款金额
+NL,Terugbetaling,,Terugbetaling,geïnde omzetbelasting,已收取的销售税-退货,42,订单,税费
+NL,Terugbetaling,,Terugbetaling,Belasting voor marketplace-facilitator,平台代扣代缴税额-退货,43,订单,税费
+NL,Terugbetaling,,Terugbetaling,verkoopkosten,佣金-退货,24,订单,平台佣金
+NL,Terugbetaling,,Terugbetaling,fba-vergoedingen,运费-退货,26,订单,尾程派送费
+NL,Terugbetaling,,Terugbetaling,overige transactiekosten,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+NL,Terugbetaling,,Terugbetaling,overige,其他-退货,4,订单,售后费用
+PL,Opłata za usługę,Koszt reklamy,Opłata za usługę/Koszt reklamy,suma,广告费,36,单维度费用,广告费
+PL,Przelew,,Przelew,suma,提现金额,18,单维度费用,
+PL,Zamówienie,,Zamówienie,sprzedaż produktów,商品销售收入,3,订单,订单金额
+PL,Zamówienie,,Zamówienie,noty kredytowe za wysyłkę,运费销售收入,8,订单,订单金额
+PL,Zamówienie,,Zamówienie,środki na pokrycie pakowania na prezent,包装收入,10,订单,订单金额
+PL,Zamówienie,,Zamówienie,rabaty promocyjne,折扣金额,12,订单,订单金额
+PL,Zamówienie,,Zamówienie,pobrany podatek od sprzedaży,已收取的销售税,41,订单,税费
+PL,Zamówienie,,Zamówienie,Podatek od transakcji Marketplace Facilitator,平台代扣代缴税额,43,订单,税费
+PL,Zamówienie,,Zamówienie,opłaty za sprzedaż,佣金,23,订单,平台佣金
+PL,Zamówienie,,Zamówienie,opłaty za fba,运费,25,订单,尾程派送费
+PL,Zamówienie,,Zamówienie,inne opłaty transakcyjne,其他交易费用,27,订单,弃置费/退货手续费/移除费
+PL,Zamówienie,,Zamówienie,inne,其他,25,订单,售后费用
+PL,Zwrot kosztów,,Zwrot kosztów,sprzedaż produktów,商品销售收入-退货,4,订单,退款金额
+PL,Zwrot kosztów,,Zwrot kosztów,noty kredytowe za wysyłkę,运费销售收入-退货,9,订单,退款金额
+PL,Zwrot kosztów,,Zwrot kosztów,środki na pokrycie pakowania na prezent,包装收入-退货,11,订单,退款金额
+PL,Zwrot kosztów,,Zwrot kosztów,rabaty promocyjne,折扣金额-退货,13,订单,退款金额
+PL,Zwrot kosztów,,Zwrot kosztów,pobrany podatek od sprzedaży,已收取的销售税-退货,42,订单,税费
+PL,Zwrot kosztów,,Zwrot kosztów,Podatek od transakcji Marketplace Facilitator,平台代扣代缴税额-退货,43,订单,税费
+PL,Zwrot kosztów,,Zwrot kosztów,opłaty za sprzedaż,佣金-退货,24,订单,平台佣金
+PL,Zwrot kosztów,,Zwrot kosztów,opłaty za fba,运费-退货,26,订单,尾程派送费
+PL,Zwrot kosztów,,Zwrot kosztów,inne opłaty transakcyjne,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+PL,Zwrot kosztów,,Zwrot kosztów,inne,其他-退货,4,订单,售后费用
+PL,Korekta,Zwrot kosztów zapasów FBA — zwrot od klienta,Korekta/Zwrot kosztów zapasów FBA — zwrot od klienta,,FBA库存赔偿-客户退货,5,单维度费用,索赔
+PL,Dług,,Dług,suma,应付亚马逊其他款项,21,单维度费用,售后费用
+SE,Återbetalning,,Återbetalning,försäljning av produkter,商品销售收入-退货,4,订单,退款金额
+SE,Återbetalning,,Återbetalning,fraktkrediter,运费销售收入-退货,9,订单,退款金额
+SE,Återbetalning,,Återbetalning,krediter för presentinslagning,包装收入-退货,11,订单,退款金额
+SE,Återbetalning,,Återbetalning,kampanjrabatter,折扣金额-退货,13,订单,退款金额
+SE,Återbetalning,,Återbetalning,Inkasserad moms,已收取的销售税-退货,42,订单,税费
+SE,Återbetalning,,Återbetalning,Skatt för marknadsplatsförmedlare,平台代扣代缴税额-退货,43,订单,税费
+SE,Återbetalning,,Återbetalning,försäljningsavgifter,佣金-退货,24,订单,平台佣金
+SE,Återbetalning,,Återbetalning,fba-avgifter,运费-退货,26,订单,尾程派送费
+SE,Återbetalning,,Återbetalning,övriga transaktionsavgifter,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+SE,Återbetalning,,Återbetalning,Övrigt,其他-退货,4,订单,售后费用
+SE,Order,,Order,försäljning av produkter,商品销售收入,3,订单,订单金额
+SE,Order,,Order,fraktkrediter,运费销售收入,8,订单,订单金额
+SE,Order,,Order,krediter för presentinslagning,包装收入,10,订单,订单金额
+SE,Order,,Order,kampanjrabatter,折扣金额,12,订单,订单金额
+SE,Order,,Order,Inkasserad moms,已收取的销售税,41,订单,税费
+SE,Order,,Order,Skatt för marknadsplatsförmedlare,平台代扣代缴税额,43,订单,税费
+SE,Order,,Order,försäljningsavgifter,佣金,23,订单,平台佣金
+SE,Order,,Order,fba-avgifter,运费,25,订单,尾程派送费
+SE,Order,,Order,övriga transaktionsavgifter,其他交易费用,27,订单,弃置费/退货手续费/移除费
+SE,Order,,Order,Övrigt,其他,25,订单,售后费用
+SE,Överföring,,Överföring,totalt,提现金额,18,单维度费用,
+SE,Serviceavgift,Kostnad för reklam,Serviceavgift/Kostnad för reklam,totalt,广告费,36,单维度费用,广告费
+UK,Adjustment,FBA Inventory Reimbursement - Customer Return,Adjustment/FBA Inventory Reimbursement - Customer Return,toatl,FBA库存赔偿-客户退货,5,单维度费用,索赔
+UK,Adjustment,FBA Inventory Reimbursement - Lost:Warehouse,Adjustment/FBA Inventory Reimbursement - Lost:Warehouse,toatl,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+UK,Adjustment,FBA Inventory Reimbursement - Damaged:Warehouse,Adjustment/FBA Inventory Reimbursement - Damaged:Warehouse,toatl,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+UK,Adjustment,FBA Inventory Reimbursement - General Adjustment,Adjustment/FBA Inventory Reimbursement - General Adjustment,toatl,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+UK,Adjustment,FBA Inventory Reimbursement - Fee Correction,Adjustment/FBA Inventory Reimbursement - Fee Correction,toatl,FBA库存赔偿-费用调整,5,单维度费用,索赔
+UK,Adjustment,FBA Inventory Reimbursement - Lost:Outbound,Adjustment/FBA Inventory Reimbursement - Lost:Outbound,toatl,FBA库存赔偿-出运丢失,46,单维度费用,索赔
+UK,Amazon Fees,Voucher participation fee,Amazon Fees/Voucher participation fee,toatl,优惠活动报名费,33,单维度费用,推广费
+UK,Amazon Fees,Voucher performance-based fee,Amazon Fees/Voucher performance-based fee,toatl,优惠券点击费,33,单维度费用,推广费
+UK,Amazon Fees,Deal participation fee,Amazon Fees/Deal participation fee,toatl,秒杀活动报名费,33,单维度费用,推广费
+UK,Amazon Fees,Deal performance-based fee,Amazon Fees/Deal performance-based fee,toatl,秒杀活动服务费,33,单维度费用,推广费
+UK,Amazon Fees,Vine Enrolment Fee,Amazon Fees/Vine Enrolment Fee,toatl,好评活动注册费,33,单维度费用,推广费
+UK,FBA Inventory Fee,FBA Disposal Fee,FBA Inventory Fee/FBA Disposal Fee,toatl,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+UK,FBA Inventory Fee,FBA storage fee,FBA Inventory Fee/FBA storage fee,toatl,FBA仓储费,29,单维度费用,仓储费
+UK,FBA Inventory Fee,FBA Long-Term Storage Fee,FBA Inventory Fee/FBA Long-Term Storage Fee,toatl,FBA长期仓储费,29,单维度费用,仓储费
+UK,Fulfilment by Amazon (FBA) transaction fees,,Fulfilment by Amazon (FBA) transaction fees,toatl,FBA配送交易服务费,25,单维度费用,尾程派送费
+UK,Liquidations,,Liquidations,product sales,清仓-收入,6,多维度费用,订单金额
+UK,Liquidations,,Liquidations,product sales tax,清仓-税费,41,多维度费用,税费
+UK,Liquidations,,Liquidations,,清仓-平台代扣代缴税额,43,多维度费用,税费
+UK,Liquidations,,Liquidations,other transaction fees,清仓-服务费,38,多维度费用,弃置费/退货手续费/移除费
+UK,order,,order,product sales,商品销售收入,3,订单,订单金额
+UK,order,,order,product sales tax,商品销售税,41,订单,税费
+UK,order,,order,postage credits,运费销售收入,8,订单,订单金额
+UK,order,,order,shipping credits tax,运费税,41,订单,税费
+UK,order,,order,gift wrap credits,包装收入,10,订单,订单金额
+UK,order,,order,giftwrap credits tax,包装税,41,订单,税费
+UK,order,,order,promotional rebates,折扣金额,12,订单,订单金额
+UK,order,,order,promotional rebates tax,折扣税,41,订单,税费
+UK,order,,order,marketplace withheld tax,平台代扣代缴税额,43,订单,税费
+UK,order,,order,selling fees,佣金,23,订单,平台佣金
+UK,order,,order,fba fees,运费,25,订单,尾程派送费
+UK,order,,order,other transaction fees,其他交易费用,27,订单,弃置费/退货手续费/移除费
+UK,order,,order,other,其他,25,订单,售后费用
+UK,Order_Retrocharge,,Order_Retrocharge,total,订单追加费-商品税,41,多维度费用,税费
+UK,Order_Retrocharge,,Order_Retrocharge,total,订单追加费-运费税,41,多维度费用,税费
+UK,Order_Retrocharge,,Order_Retrocharge,total,订单追加费-平台代扣代缴税额,43,多维度费用,税费
+UK,Refund,,Refund,product sales,商品销售收入-退货,4,订单,退款金额
+UK,Refund,,Refund,product sales tax,商品销售税-退货,42,订单,税费
+UK,Refund,,Refund,postage credits,运费销售收入-退货,9,订单,退款金额
+UK,Refund,,Refund,shipping credits tax,运费税-退货,42,订单,税费
+UK,Refund,,Refund,gift wrap credits,包装收入-退货,11,订单,退款金额
+UK,Refund,,Refund,giftwrap credits tax,包装税-退货,42,订单,税费
+UK,Refund,,Refund,promotional rebates,折扣金额-退货,13,订单,退款金额
+UK,Refund,,Refund,promotional rebates tax,折扣税-退货,42,订单,税费
+UK,Refund,,Refund,marketplace withheld tax,平台代扣代缴税额-退货,43,订单,税费
+UK,Refund,,Refund,selling fees,佣金-退货,24,订单,平台佣金
+UK,Refund,,Refund,fba fees,运费-退货,26,订单,尾程派送费
+UK,Refund,,Refund,other transaction fees,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+UK,Refund,,Refund,other,其他-退货,4,订单,售后费用
+UK,Service Fee,Cost of Advertising,Service Fee/Cost of Advertising,total,广告费,36,单维度费用,广告费
+UK,Service Fee,Subscription,Service Fee/Subscription,total,店铺月租,33,单维度费用,弃置费/退货手续费/移除费
+UK,Service Fee,Coupon Redemption Fee,Service Fee/Coupon Redemption Fee,total,优惠券使用费,33,单维度费用,推广费
+UK,Transfer,,Transfer,total,提现金额,18,单维度费用,
+UK,FBA Inventory Fee,Capacity Reservation Fee,FBA Inventory Fee/Capacity Reservation Fee,total,FBA仓储超量费,待发生此类型金额,单维度费用,仓储费
+US,Adjustment,FBA Inventory Reimbursement - Customer Service Issue,Adjustment/FBA Inventory Reimbursement - Customer Service Issue,total,FBA库存赔偿-客户服务费,5,单维度费用,索赔
+US,Adjustment,FBA Inventory Reimbursement - Customer Return,Adjustment/FBA Inventory Reimbursement - Customer Return,total,FBA库存赔偿-客户退货,5,单维度费用,索赔
+US,Adjustment,FBA Inventory Reimbursement - Damaged:Warehouse,Adjustment/FBA Inventory Reimbursement - Damaged:Warehouse,total,FBA库存赔偿-仓库损毁,5,单维度费用,索赔
+US,Adjustment,FBA Inventory Reimbursement - General Adjustment,Adjustment/FBA Inventory Reimbursement - General Adjustment,total,FBA库存赔偿-常规调整,35,单维度费用,售后费用
+US,Adjustment,FBA Inventory Reimbursement - Lost:Warehouse,Adjustment/FBA Inventory Reimbursement - Lost:Warehouse,total,FBA库存赔偿-仓库遗失,5,单维度费用,索赔
+US,Adjustment,FBA Inventory Reimbursement - Lost:Outbound,Adjustment/FBA Inventory Reimbursement - Lost:Outbound,total,FBA库存赔偿-出运丢失,46,单维度费用,索赔
+US,Amazon Fees,Coupon Performance Based Fee,Amazon Fees/Coupon Performance Based Fee,total,优惠券点击费,33,单维度费用,推广费
+US,Amazon Fees,Coupon Participation Fee,Amazon Fees/Coupon Participation Fee,total,优惠活动报名费,33,单维度费用,推广费
+US,Amazon Fees,Deal Performance Based Fee,Amazon Fees/Deal Performance Based Fee,total,秒杀活动服务费,33,单维度费用,推广费
+US,Amazon Fees,Deal Participation Fee,Amazon Fees/Deal Participation Fee,total,秒杀活动报名费,33,单维度费用,推广费
+US,FBA Inventory Fee,FBA Removal Order: Return Fee,FBA Inventory Fee/FBA Removal Order: Return Fee,total,FBA退回运费,29,单维度费用,售后费用
+US,FBA Inventory Fee,FBA storage fee,FBA Inventory Fee/FBA storage fee,total,FBA仓储费,29,单维度费用,仓储费
+US,FBA Inventory Fee,FBA Removal Order: Disposal Fee,FBA Inventory Fee/FBA Removal Order: Disposal Fee,total,FBA弃置费,29,单维度费用,弃置费/退货手续费/移除费
+US,FBA Inventory Fee,FBA Long-Term Storage Fee,FBA Inventory Fee/FBA Long-Term Storage Fee,total,FBA长期仓储费,29,单维度费用,仓储费
+US,FBA Transaction fees,FBA Customer Returns Fee,FBA Transaction fees/FBA Customer Returns Fee,total,FBA客户退货处理费,25,单维度费用,弃置费/退货手续费/移除费
+US,Liquidations,,Liquidations,product sales,清仓-收入,6,多维度费用,订单金额
+US,Liquidations,,Liquidations,product sales tax,清仓-税费,41,多维度费用,税费
+US,Liquidations,,Liquidations,,清仓-平台代扣代缴税额,43,多维度费用,税费
+US,Liquidations,,Liquidations,other transaction fees,清仓-服务费,38,多维度费用,弃置费/退货手续费/移除费
+US,Liquidations,,Liquidations,,清仓-采购成本,待发生此类型金额,多维度费用,商品成本
+US,Liquidations Adjustments,,Liquidations Adjustments,product sales,清仓-收入调整,7,多维度费用,订单金额
+US,Liquidations Adjustments,,Liquidations Adjustments,product sales tax,清仓-税费调整,41,多维度费用,税费
+US,Liquidations Adjustments,,Liquidations Adjustments,,清仓-平台代扣代缴税额调整,43,多维度费用,税费
+US,Liquidations Adjustments,,Liquidations Adjustments,other transaction fees,清仓-服务费调整,38,多维度费用,弃置费/退货手续费/移除费
+US,Order,,Order,product sales,商品销售收入,3,订单,订单金额
+US,Order,,Order,product sales tax,商品销售税,41,订单,税费
+US,Order,,Order,shipping credits,运费销售收入,8,订单,订单金额
+US,Order,,Order,shipping credits tax,运费税,41,订单,税费
+US,Order,,Order,gift wrap credits,包装收入,10,订单,订单金额
+US,Order,,Order,giftwrap credits tax,包装税,41,订单,税费
+US,Order,,Order,Regulatory Fee,监管费,待发生此类型金额,订单,弃置费/退货手续费/移除费
+US,Order,,Order,Tax On Regulatory Fee,监管费税,待发生此类型金额,订单,税费
+US,Order,,Order,promotional rebates,折扣金额,12,订单,订单金额
+US,Order,,Order,promotional rebates tax,折扣税,41,订单,税费
+US,Order,,Order,marketplace withheld tax,平台代扣代缴税额,43,订单,税费
+US,Order,,Order,selling fees,佣金,23,订单,平台佣金
+US,Order,,Order,fba fees,运费,25,订单,尾程派送费
+US,Order,,Order,other transaction fees,其他交易费用,27,订单,弃置费/退货手续费/移除费
+US,Order,,Order,other,其他,25,订单,售后费用
+US,Order_Retrocharge,,Order_Retrocharge,product sales tax,订单追加费-商品税,41,多维度费用,税费
+US,Order_Retrocharge,,Order_Retrocharge,shipping credits tax,订单追加费-运费税,41,多维度费用,税费
+US,Order_Retrocharge,,Order_Retrocharge,marketplace withheld tax,订单追加费-平台代扣代缴税额,43,多维度费用,税费
+US,Refund,,Refund,product sales,商品销售收入-退货,4,订单,退款金额
+US,Refund,,Refund,product sales tax,商品销售税-退货,42,订单,税费
+US,Refund,,Refund,shipping credits,运费销售收入-退货,9,订单,退款金额
+US,Refund,,Refund,shipping credits tax,运费税-退货,42,订单,税费
+US,Refund,,Refund,gift wrap credits,包装收入-退货,11,订单,退款金额
+US,Refund,,Refund,giftwrap credits tax,包装税-退货,42,订单,税费
+US,Refund,,Refund,Regulatory Fee,监管费-退货,待发生此类型金额,订单,弃置费/退货手续费/移除费
+US,Refund,,Refund,Tax On Regulatory Fee,监管费税-退货,待发生此类型金额,订单,税费
+US,Refund,,Refund,promotional rebates,折扣金额-退货,13,订单,退款金额
+US,Refund,,Refund,promotional rebates tax,折扣税-退货,42,订单,税费
+US,Refund,,Refund,marketplace withheld tax,平台代扣代缴税额-退货,43,订单,税费
+US,Refund,,Refund,selling fees,佣金-退货,24,订单,平台佣金
+US,Refund,,Refund,fba fees,运费-退货,26,订单,尾程派送费
+US,Refund,,Refund,other transaction fees,其他交易费用-退货,28,订单,弃置费/退货手续费/移除费
+US,Refund,,Refund,other,其他-退货,4,订单,售后费用
+US,Refund_Retrocharge,,Refund_Retrocharge,product sales tax,退款追加费-商品税,42,多维度费用,税费
+US,Refund_Retrocharge,,Refund_Retrocharge,shipping credits tax,退款追加费-运费税,42,多维度费用,税费
+US,Refund_Retrocharge,,Refund_Retrocharge,marketplace withheld tax,退款追加费-平台代扣代缴税额,43,多维度费用,税费
+US,Service Fee,Cost of Advertising,Service Fee/Cost of Advertising,total,广告费,36,单维度费用,广告费
+US,Service Fee,FBA Inbound Placement Service Fee,Service Fee/FBA Inbound Placement Service Fee,total,FBA入库配置费,33,单维度费用,弃置费/退货手续费/移除费
+US,Service Fee,Subscription,Service Fee/Subscription,total,店铺月租,33,单维度费用,弃置费/退货手续费/移除费
+US,Service Fee,Inbound Defect Fee - Shipments delivered to the wrong location,Service Fee/Inbound Defect Fee - Shipments delivered to the wrong location,total,亚马逊罚款-送错仓库,33,单维度费用,索赔
+US,Service Fee,Unplanned Service Charge - Deleted/Abandoned Shipments,Service Fee/Unplanned Service Charge - Deleted/Abandoned Shipments,total,亚马逊罚款-删除货件,33,单维度费用,索赔
+US,Service Fee - Reversal,Inbound Defect Fee - Shipments delivered to the wrong location,Service Fee - Reversal/Inbound Defect Fee - Shipments delivered to the wrong location,total,亚马逊罚款-送错仓库,33,单维度费用,索赔
+US,Transfer,,Transfer,total,提现金额,18,单维度费用,
+US,Amazon Fees,Vine Enrollment Fee,Amazon Fees/Vine Enrollment Fee,total,好评活动注册费,33,单维度费用,推广费
+US,Debt,,Debt,total,应付亚马逊其他款项,21,单维度费用,售后费用
+US,Fee Adjustment,Fee Adjustment - Weight and Dimension Change,Fee Adjustment/Fee Adjustment - Weight and Dimension Change,total,费用调整-重量体积调整,26,单维度费用,弃置费/退货手续费/移除费
+US,Adjustment,Buyer Recharge,Adjustment/Buyer Recharge,total,客户货款追回-美区,35,单维度费用,售后费用
+US,Adjustment,Non-subscription Fee Adjustment,Adjustment/Non-subscription Fee Adjustment,total,非订阅类费用的调整,35,单维度费用,售后费用
+CA,Order_Retrocharge,retrocharge for,Order_Retrocharge/retrocharge for,商品销售税,订单追加费-商品税,41,多维度费用,税费
+CA,Order_Retrocharge,retrocharge for,Order_Retrocharge/retrocharge for,运费税,运费税,41,订单,税费
+CA,Order_Retrocharge,retrocharge for,Order_Retrocharge/retrocharge for,平台代扣代缴税额,平台代扣代缴税额,43,订单,税费
+CA,Refund_Retrocharge,retrocharge reversal for,Refund_Retrocharge/retrocharge reversal for,商品销售税,退款追加费-商品税,42,多维度费用,税费
+CA,Refund_Retrocharge,retrocharge reversal for,Refund_Retrocharge/retrocharge reversal for,运费税,退款追加费-运费税,42,多维度费用,税费
+CA,Refund_Retrocharge,retrocharge reversal for,Refund_Retrocharge/retrocharge reversal for,平台代扣代缴税额,退款追加费-平台代扣代缴税额,43,多维度费用,税费
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,商品采购成本,待发生此类型金额,订单,商品成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,商品头程运费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,商品头程税费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,商品采购成本,待发生此类型金额,订单,商品成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,商品头程运费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,商品头程税费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,退货服务费-头程税费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,退货服务费-头程运费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,退货头程税费,待发生此类型金额,订单,头程成本
+US,匹配成本及头程用,匹配成本及头程用,匹配成本及头程用/匹配成本及头程用,,退货头程运费,待发生此类型金额,订单,头程成本
+US,FBA Inventory Fee,Inventory Storage Overage Fee,FBA Inventory Fee/Inventory Storage Overage Fee,total,FBA仓储超量费,待发生此类型金额,单维度费用,仓储费
+US,Adjustment,Commission Adjustment,Adjustment/Commission Adjustment,,佣金调整,待发生此类型金额,单维度费用,平台佣金
+US,FBA Customer Return Fee,FBA Customer Return Per Unit Fee (Apparel & Shoes),FBA Customer Return Fee/FBA Customer Return Per Unit Fee (Apparel & Shoes),,FBA客户退货处理费,25,单维度费用,弃置费/退货手续费/移除费
+US,Service Fee,Vine Enrollment Fee,Service Fee/Vine Enrollment Fee,,好评活动注册费,33,单维度费用,推广费
+US,FBA Inventory Fee,FBA Amazon-Partnered Carrier Shipment Fee,FBA Inventory Fee/FBA Amazon-Partnered Carrier Shipment Fee,,FBA仓储运输费,待发生此类型金额,单维度费用,头程成本
+US,Service Fee,Refund for Advertiser,Service Fee/Refund for Advertiser,,广告费退款,37,单维度费用,广告费
+US,Service Fee,Inbound Defect Fee - Amazon barcode missing,Service Fee/Inbound Defect Fee - Amazon barcode missing,,入库手续费-缺少面单,待发生此类型金额,单维度费用,弃置费/退货手续费/移除费
+FR,Ajustement,Autre,Ajustement/Autre,,其他调整,35,单维度费用,售后费用
+IT,Modifica,Ricarico acquirente,Modifica/Ricarico acquirente,,向买家收取的费用调整,35,单维度费用,售后费用
+UK,FBA Inventory Fee,FBA Return Fee,FBA Inventory Fee/FBA Return Fee,,FBA退回运费,29,单维度费用,售后费用
+CA,Amazon fees,Deal participation fee,Amazon fees/Deal participation fee,,秒杀活动报名费,33,单维度费用,推广费
+CA,Amazon fees,Deal performance-based fee,Amazon fees/Deal performance-based fee,,秒杀活动服务费,33,单维度费用,推广费
+US,Adjustment,FixedClosingFee Adjustment,Adjustment/FixedClosingFee Adjustment,,固定费用调整,待发生此类型金额,单维度费用,平台佣金
+US,Adjustment,GiftwrapCommission Adjustment,Adjustment/GiftwrapCommission Adjustment,,礼品包装佣金调整,待发生此类型金额,单维度费用,平台佣金
+US,Adjustment,ShippingHB Adjustment,Adjustment/ShippingHB Adjustment,,运费退款调整,待发生此类型金额,单维度费用,尾程派送费
+US,Adjustment,VariableClosingFee Adjustment,Adjustment/VariableClosingFee Adjustment,,可变成交费调整,待发生此类型金额,单维度费用,售后费用
+US,Adjustment,FBA Inventory Reimbursement - Lost:Inbound,Adjustment/FBA Inventory Reimbursement - Lost:Inbound,,FBA库存赔偿-入库丢失,5,单维度费用,索赔
+US,Adjustment,Disbursement Correction,Adjustment/Disbursement Correction,,付款纠正,待发生此类型金额,单维度费用,售后费用
+US,FBA Inventory Fee,,FBA Inventory Fee/nan,,FBA入库费用,29,单维度费用,弃置费/退货手续费/移除费
+US,Amazon Fees - Reversal,Coupon Performance Based Fee,Amazon Fees - Reversal/Coupon Performance Based Fee,,优惠券点击费退回,33,单维度费用,推广费
+US,Shipping Services,ReturnPostageBilling,Shipping Services/ReturnPostageBilling,,卖家承担退回运费,30,单维度费用,售后费用
+IE,FBA inventory fee,FBA storage fee,FBA inventory fee/FBA storage fee,,FBA仓储费,29,单维度费用,仓储费
+IT,Tariffe e commissioni Amazon,Tariffa di iscrizione a Vine,Tariffe e commissioni Amazon/Tariffa di iscrizione a Vine,,好评活动注册费,33,单维度费用,推广费
+SE,Justering,FBA återdebitering av lager - Kundretur,Justering/FBA återdebitering av lager - Kundretur,,FBA库存赔偿-费用调整,5,单维度费用,索赔
+US,Shipping Services,Adjustment,Shipping Services/Adjustment,,运费调整,32,单维度费用,售后费用
+DE,Versand durch Amazon Lagergebühr,Versand durch Amazon Gebühr für Rücksendung,Versand durch Amazon Lagergebühr/Versand durch Amazon Gebühr für Rücksendung,Gesamt,亚马逊额外退货处理费,29,单维度费用,售后费用
+ES,Tarifas de inventario de Logística de Amazon,Tarifa por devolución de inventario,Tarifas de inventario de Logística de Amazon/Tarifa por devolución de inventario,total,FBA客户退货处理费,25,单维度费用,弃置费/退货手续费/移除费
+IT,Costo di stoccaggio Logistica di Amazon,Tariffa di restituzione Logistica di Amazon,Costo di stoccaggio Logistica di Amazon/Tariffa di restituzione Logistica di Amazon,totale,FBA客户退货处理费,25,单维度费用,弃置费/退货手续费/移除费
+UK,A-to-z Guarantee Claim,,A-to-z Guarantee Claim,,索赔退款,14,单维度费用,退款金额
+UK,A-to-z Guarantee Claim,,A-to-z Guarantee Claim,,索赔退款,14,单维度费用,退款金额
+UK,A-to-z Guarantee Claim,,A-to-z Guarantee Claim,,索赔退款,14,单维度费用,退款金额
+UK,A-to-z Guarantee Claim,,A-to-z Guarantee Claim,,商品销售税,41,订单,税费
+UK,A-to-z Guarantee Claim,,A-to-z Guarantee Claim,,平台代扣代缴税额,43,订单,税费
+UK,Fee Adjustment,Fee Adjustment - Weight and Dimension Change,Fee Adjustment/Fee Adjustment - Weight and Dimension Change,,费用调整-重量体积调整,26,单维度费用,弃置费/退货手续费/移除费
+DE,Verbindlichkeit,amzn1.cam.v1.sgid,Verbindlichkeit/amzn1.cam.v1.sgid,,预提费用,20,单维度费用,售后费用
+NL,Aanpassing,Mislukte vergoeding,Aanpassing/Mislukte vergoeding,,补偿发放失败调整,19,单维度费用,索赔
