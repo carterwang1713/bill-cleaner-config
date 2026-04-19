@@ -1,0 +1,12 @@
+type,description示例,匹配辅助列示例,说明,分类,添加时间
+Service Fee,Storage Fee,Service Fee/Storage Fee,仓储费,服务费相关,2026-04-16
+Service Fee,Long-Term Storage Fee,Service Fee/Long-Term Storage Fee,长期仓储费,服务费相关,2026-04-16
+Servicegebühr,Lagergebühr,Servicegebühr/Lagergebühr,德语站仓储费,服务费相关,2026-04-16
+FBA Inventory Fee,Inventory Storage Fee,FBA Inventory Fee/Inventory Storage Fee,FBA仓储费,FBA相关,2026-04-16
+FBA Inventory Fee,Long-Term Storage Fee,FBA Inventory Fee/Long-Term Storage Fee,FBA长期仓储费,FBA相关,2026-04-16
+Adjustment,Item Not Received,Adjustment/Item Not Received,未收到商品调整,调整相关,2026-04-16
+Adjustment,Wrong Item Sent,Adjustment/Wrong Item Sent,发错商品调整,调整相关,2026-04-16
+Anpassung,Artikel nicht erhalten,Anpassung/Artikel nicht erhalten,德语站未收到商品,调整相关,2026-04-16
+Service Fee,Subscription Fee,Service Fee/Subscription Fee,订阅费,其他费用,2026-04-16
+Service Fee,Lightning Deal Fee,Service Fee/Lightning Deal Fee,秒杀费用,其他费用,2026-04-16
+Misc Adjustment,Various,Misc Adjustment/Various,杂项调整,其他费用,2026-04-16
