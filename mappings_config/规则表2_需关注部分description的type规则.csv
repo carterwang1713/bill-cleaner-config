@@ -1,0 +1,12 @@
+规则序号,type条件,description条件,匹配辅助列,说明,优先级,添加时间
+1,任意,包含 Coupon Redemption Fee,{type}/Coupon Redemption Fee,优惠券兑换费,2,2026-04-16
+2,任意,包含 促销,促销,促销费用,3,2026-04-16
+3,包含 FBA Transaction fees,包含 FBA Customer Returns Fee,FBA Transaction fees/FBA Customer Returns Fee,FBA客户退货费,4,2026-04-16
+4,包含 Servicegebühr,包含 Coupon-Einlösungsgebühr,Servicegebühr/Coupon-Einlösungsgebühr,德语站优惠券兑换费,5,2026-04-16
+5,包含 Transaktionsgebühren für Versand durch Amazon,包含 "Versand durch Amazon"-Gebühr für Kundenrücksendungen,Transaktionsgebühren für Versand durch Amazon/"Versand durch Amazon"-Gebühr für Kundenrücksendungen,德语站FBA客户退货费,6,2026-04-16
+6,包含 Order_Retrocharge,包含 retrocharge for,Order_Retrocharge/retrocharge for,订单追加收费明细,7,2026-04-16
+7,包含 Frais de service,包含 coupon,Frais de service/coupon,法语站优惠券相关,8,2026-04-16
+7.1,包含 Frais de service,包含 Coût de la publicité,Frais de service/Coût de la publicité,法语站广告费,9,2026-04-17
+8,包含 注文外料金,包含 クーポン償還手数料,注文外料金/クーポン償還手数料,日语站优惠券兑换费,10,2026-04-16
+9,包含 Refund_Retrocharge,包含 retrocharge reversal for,Refund_Retrocharge/retrocharge reversal for,退款追加收费反转,11,2026-04-16
+10,为空或空字符串,区域为CA/DE/ES/FR/IT/JP/UK/US,其他交易服务费,空type默认处理,1,2026-04-16
