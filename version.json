@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "release_date": "2026-04-19",
+  "download_url": "https://github.com/carterwang1713/bill-cleaner-config/releases",
+  "changelog": [
+    "初始版本发布",
+    "支持云端配置同步",
+    "支持账号登录管理"
+  ],
+  "min_version": "1.0.0",
+  "force_update": false
+}
