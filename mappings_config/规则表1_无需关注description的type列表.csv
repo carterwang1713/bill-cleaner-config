@@ -1,0 +1,47 @@
+type,语言,说明,分类,添加时间
+order,英语,订单,订单相关,2026-04-16
+refund,英语,退款,订单相关,2026-04-16
+commande,法语,订单,订单相关,2026-04-16
+bestellung,德语,订单,订单相关,2026-04-16
+erstattung,德语,退款,订单相关,2026-04-16
+pedido,西班牙语,订单,订单相关,2026-04-16
+reembolso,西班牙语,退款,订单相关,2026-04-16
+remboursement,法语,退款,订单相关,2026-04-16
+ordine,意大利语,订单,订单相关,2026-04-16
+rimborso,意大利语,退款,订单相关,2026-04-16
+返金,日语,退款,订单相关,2026-04-16
+注文,日语,订单,订单相关,2026-04-16
+bestelling,荷兰语,订单,订单相关,2026-04-16
+terugbetaling,荷兰语,退款,订单相关,2026-04-16
+zamówienie,波兰语,订单,订单相关,2026-04-16
+zwrot kosztów,波兰语,退款,订单相关,2026-04-16
+återbetalning,瑞典语,退款,订单相关,2026-04-16
+transfer,英语,转账,转账相关,2026-04-16
+transférer,法语,转账,转账相关,2026-04-16
+übertrag,德语,转账,转账相关,2026-04-16
+transferir,西班牙语,转账,转账相关,2026-04-16
+transfert,法语,转账,转账相关,2026-04-16
+trasferimento,意大利语,转账,转账相关,2026-04-16
+振込み,日语,转账,转账相关,2026-04-16
+overboeking,荷兰语,转账,转账相关,2026-04-16
+przelew,波兰语,转账,转账相关,2026-04-16
+överföring,瑞典语,转账,转账相关,2026-04-16
+chargeback refund,英语,拒付退款,特殊费用,2026-04-16
+Chargeback Refund,英语,拒付退款(大写),特殊费用,2026-04-16
+liquidations,英语,清算,特殊费用,2026-04-16
+liquidationen,德语,清算,特殊费用,2026-04-16
+liquidations adjustments,英语,清算调整,特殊费用,2026-04-16
+liquidationsanpassungen,德语,清算调整,特殊费用,2026-04-16
+debt,英语,债务,特殊费用,2026-04-16
+fulfilment by amazon (fba) transaction fees,英语,FBA交易费用,FBA交易费用,2026-04-16
+tarifas de transacción de logística de amazon,西班牙语,FBA交易费用,FBA交易费用,2026-04-16
+commissioni per le transazioni di logistica di amazon,意大利语,FBA交易费用,FBA交易费用,2026-04-16
+frais de transaction expédié par amazon,法语,FBA交易费用,FBA交易费用,2026-04-16
+order_retrocharge,英语,订单追加收费,追加收费,2026-04-16
+refund_retrocharge,英语,退款追加收费,追加收费,2026-04-16
+cargo retroactivo,西班牙语,追加收费,追加收费,2026-04-16
+erstattung durch rückbuchung,德语,退款退回,追加收费,2026-04-16
+bestellung_wiedereinzug,德语,订单重新扣款,追加收费,2026-04-16
+erstattung_wiedereinzug,德语,退款重新扣款,追加收费,2026-04-16
+dług,波兰语,债务,追加收费,2026-04-16
+a-to-z guarantee claim,英语,A-to-Z保障索赔,其他,2026-04-16
