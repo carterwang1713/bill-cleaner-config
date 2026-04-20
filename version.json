@@ -1,11 +1,12 @@
 {
-  "version": "1.0.0",
-  "release_date": "2026-04-19",
+  "version": "1.1.0",
+  "release_date": "2026-04-20",
   "download_url": "https://github.com/carterwang1713/bill-cleaner-config/releases",
   "changelog": [
-    "初始版本发布",
-    "支持云端配置同步",
-    "支持账号登录管理"
+    "新增绩效维度映射表（performance_dimension_mapping.csv）",
+    "支持账单字段序列码匹配",
+    "支持绩效表对应维度匹配",
+    "优化清洗流程，增加Step 10绩效维度匹配"
   ],
   "min_version": "1.0.0",
   "force_update": false
