@@ -10,3 +10,5 @@
 8,包含 注文外料金,包含 クーポン償還手数料,注文外料金/クーポン償還手数料,日语站优惠券兑换费,10,2026-04-16
 9,包含 Refund_Retrocharge,包含 retrocharge reversal for,Refund_Retrocharge/retrocharge reversal for,退款追加收费反转,11,2026-04-16
 10,为空或空字符串,区域为CA/DE/ES/FR/IT/JP/UK/US,其他交易服务费,空type默认处理,1,2026-04-16
+11,包含 Amazon Fees,包含 Éco-contribution pour le service REP Nous payons en votre nom - FR - FURNITURE,Amazon Fees/Éco-contribution pour le service REP Nous payons en votre nom - FR - FURNITURE,法语站环保回收费(FURNITURE),12,2026-05-06
+12,包含 Amazon Fees,包含 Frais de service Amazon pour le service REP Nous payons en votre nom - FR - FURNITURE,Amazon Fees/Frais de service Amazon pour le service REP Nous payons en votre nom - FR - FURNITURE,法语站环保服务费(FURNITURE),13,2026-05-06
