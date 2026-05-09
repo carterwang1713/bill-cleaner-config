@@ -205,5 +205,8 @@
   "調整/FBA在庫の返金 - 紛失: 出荷時:": "FBA库存赔偿-出运丢失",
   "調整/FBA在庫の返金 - 購入者による返品:": "FBA库存赔偿-客户退货",
   "調整/購入者の再課金：": "客户货款追回",
-  "返金": "商品销售收入-退货"
+  "返金": "商品销售收入-退货",
+  "FBA Transaction fees/AWD Processing Fee": "AWD处理费",
+  "FBA Transaction fees/AWD Storage Fee": "AWD仓储费",
+  "FBA Transaction fees/AWD Transportation Fee": "AWD运输费"
 }
