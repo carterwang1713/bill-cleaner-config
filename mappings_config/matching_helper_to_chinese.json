@@ -111,7 +111,7 @@
   "Fulfilment by Amazon (FBA) transaction fees": "FBA配送交易服务费",
   "Gebühren von Amazon/Coupon-Teilnahmegebühr": "优惠活动报名费",
   "Gebühren von Amazon/Leistungsbasierte Angebotsgebühr": "秒杀活动服务费",
-  "Gebühren von Amazon/Leistungsbasierte Coupon-Gebühr": "优惠券点击费",
+  "Gebühren von Amazon/Leistungsbasierte Coupon-Gebühr": "优惠活动服务费",
   "Gebühren von Amazon/Teilnahmegebühr für das Angebot": "秒杀活动报名费",
   "Gebühren von Amazon/Vine-Registrierungsgebühr": "好评活动注册费",
   "Justering/FBA återdebitering av lager - Kundretur": "FBA库存赔偿-费用调整",
@@ -206,9 +206,15 @@
   "調整/FBA在庫の返金 - 購入者による返品:": "FBA库存赔偿-客户退货",
   "調整/購入者の再課金：": "客户货款追回",
   "返金": "商品销售收入-退货",
+  "Amazon Fees/Éco-contribution pour le service REP Nous payons en votre nom - FR - FURNITURE": "REP环保贡献费",
+  "Amazon Fees/Frais de service Amazon pour le service REP Nous payons en votre nom - FR - FURNITURE": "REP代办手续费",
+  "Service Fee/Refund for advertiser": "广告费退款",
+  "注文外料金/広告費の返金": "广告费退款",
+  "Amazon Fees - Correction/Coupon Performance Based Fee": "优惠券点击费调整",
   "FBA Transaction fees/AWD Processing Fee": "AWD处理费",
   "FBA Transaction fees/AWD Storage Fee": "AWD仓储费",
   "FBA Transaction fees/AWD Transportation Fee": "AWD运输费",
   "Order [Amazon Haul]": "商品销售收入-Haul",
-  "order [amazon haul]": "商品销售收入-Haul"
+  "order [amazon haul]": "商品销售收入-Haul",
+  "Adjustment/FBA Inventory Reimbursement - Damaged:Outbound": "FBA库存赔偿-出运损毁"
 }
