@@ -219,3 +219,7 @@ order [amazon haul],商品销售收入-Haul
 Adjustment/FBA Inventory Reimbursement - Damaged:Outbound,FBA库存赔偿-出运损毁
 Service Fee/Premium Services Fee,优先处理服务费
 Service Fee - Correction/Inbound Defect Fee - Shipments delivered to the wrong location,亚马逊罚款-送错仓库
+Refund [Amazon Haul],商品销售收入-退货-Haul
+refund [amazon haul],商品销售收入-退货-Haul
+FBA Inventory Fee [Amazon Haul],FBA仓储费-Haul
+fba inventory fee [amazon haul],FBA仓储费-Haul
