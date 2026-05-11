@@ -217,3 +217,5 @@ FBA Transaction fees/AWD Transportation Fee,AWD运输费
 Order [Amazon Haul],商品销售收入-Haul
 order [amazon haul],商品销售收入-Haul
 Adjustment/FBA Inventory Reimbursement - Damaged:Outbound,FBA库存赔偿-出运损毁
+Service Fee/Premium Services Fee,优先处理服务费
+Service Fee - Correction/Inbound Defect Fee - Shipments delivered to the wrong location,亚马逊罚款-送错仓库
