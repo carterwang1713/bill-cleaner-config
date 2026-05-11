@@ -423,3 +423,267 @@ verkoopkosten,商品销售收入-退货,佣金
 配送料,商品销售收入,运费销售收入
 配送料の税金,商品销售收入-退货,运费税
 配送料の税金,商品销售收入,运费税
+Accrediti per confezioni regalo,商品销售收入-Haul,包装收入
+Accrediti per confezioni regalo,商品销售收入-Haul-退货,包装收入
+Accrediti per le spedizioni,商品销售收入-Haul,运费销售收入
+Accrediti per le spedizioni,商品销售收入-Haul-退货,运费销售收入
+Altri costi relativi alle transazioni,商品销售收入-Haul,其他交易费用
+Altri costi relativi alle transazioni,商品销售收入-Haul-退货,其他交易费用
+Altro,商品销售收入-Haul,其他
+Altro,商品销售收入-Haul-退货,其他
+Amazonポイントの費用,商品销售收入-Haul-退货,亚马逊积分费用
+Amazonポイントの費用,商品销售收入-Haul,亚马逊积分费用
+Andere,商品销售收入-Haul,其他
+Andere,商品销售收入-Haul-退货,其他
+Andere,商品销售收入-Haul-客户拒付,其他
+Andere Transaktionsgebühren,商品销售收入-Haul,其他交易费用
+Andere Transaktionsgebühren,商品销售收入-Haul-退货,其他交易费用
+Andere Transaktionsgebühren,商品销售收入-Haul-客户拒付,其他交易费用
+Belasting voor marketplace-facilitator,商品销售收入-Haul,平台代扣代缴税额
+Belasting voor marketplace-facilitator,商品销售收入-Haul-退货,平台代扣代缴税额
+Commissioni di vendita,商品销售收入-Haul,佣金
+Commissioni di vendita,商品销售收入-Haul-退货,佣金
+Costi del servizio Logistica di Amazon,商品销售收入-Haul,运费
+Costi del servizio Logistica di Amazon,商品销售收入-Haul-退货,运费
+Einbehaltene Steuer auf Marketplace,商品销售收入-Haul,平台代扣代缴税额
+Einbehaltene Steuer auf Marketplace,商品销售收入-Haul-退货,平台代扣代缴税额
+Einbehaltene Steuer auf Marketplace,商品销售收入-Haul-客户拒付,平台代扣代缴税额
+FBA 手数料,商品销售收入-Haul-退货,运费
+FBA 手数料,商品销售收入-Haul,运费
+Frais Expédié par Amazon,商品销售收入-Haul,运费
+Frais Expédié par Amazon,商品销售收入-Haul-退货,运费
+Frais pour le service Expédié par Amazon,商品销售收入-Haul,运费
+Gebühren zu Versand durch Amazon,商品销售收入-Haul,运费
+Gebühren zu Versand durch Amazon,商品销售收入-Haul-退货,运费
+Gebühren zu Versand durch Amazon,商品销售收入-Haul-客户拒付,运费
+Gutschrift für Geschenkverpackung,商品销售收入-Haul,包装收入
+Gutschrift für Geschenkverpackung,商品销售收入-Haul-退货,包装收入
+Gutschrift für Geschenkverpackung,商品销售收入-Haul-客户拒付,包装收入
+Gutschrift für Versandkosten,商品销售收入-Haul,运费销售收入
+Gutschrift für Versandkosten,商品销售收入-Haul-退货,运费销售收入
+Gutschrift für Versandkosten,商品销售收入-Haul-客户拒付,运费销售收入
+Inkasserad moms,商品销售收入-Haul-退货,已收取的销售税
+Inkasserad moms,商品销售收入-Haul,已收取的销售税
+Podatek od transakcji Marketplace Facilitator,商品销售收入-Haul,平台代扣代缴税额
+Podatek od transakcji Marketplace Facilitator,商品销售收入-Haul-退货,平台代扣代缴税额
+Produktumsatzsteuer,商品销售收入-Haul,商品销售税
+Produktumsatzsteuer,商品销售收入-Haul-退货,商品销售税
+Produktumsatzsteuer,商品销售收入-Haul-客户拒付,商品销售税
+Rabais promotionnels,商品销售收入-Haul,折扣金额
+Rabais promotionnels,商品销售收入-Haul-退货,折扣金额
+Rabatte aus Werbeaktionen,商品销售收入-Haul,折扣金额
+Rabatte aus Werbeaktionen,商品销售收入-Haul-退货,折扣金额
+Rabatte aus Werbeaktionen,商品销售收入-Haul-客户拒付,折扣金额
+Regulatory Fee,商品销售收入-Haul,监管费
+Regulatory Fee,商品销售收入-Haul-退货,监管费
+Regulatory fee,商品销售收入-Haul,监管费
+Regulatory fee,商品销售收入-Haul-退货,监管费
+Regulatory fee,商品销售收入-Haul-客户拒付,监管费
+Sconti promozionali,商品销售收入-Haul,折扣金额
+Sconti promozionali,商品销售收入-Haul-退货,折扣金额
+Skatt för marknadsplatsförmedlare,商品销售收入-Haul-退货,平台代扣代缴税额
+Skatt för marknadsplatsförmedlare,商品销售收入-Haul,平台代扣代缴税额
+Steuer auf Aktionsrabatte,商品销售收入-Haul,折扣税
+Steuer auf Aktionsrabatte,商品销售收入-Haul-退货,折扣税
+Steuer auf Aktionsrabatte,商品销售收入-Haul-客户拒付,折扣税
+Steuer auf Geschenkverpackungsgutschriften,商品销售收入-Haul,包装税
+Steuer auf Geschenkverpackungsgutschriften,商品销售收入-Haul-退货,包装税
+Steuer auf Geschenkverpackungsgutschriften,商品销售收入-Haul-客户拒付,包装税
+Steuer auf Versandgutschrift,商品销售收入-Haul,运费税
+Steuer auf Versandgutschrift,商品销售收入-Haul-退货,运费税
+Steuer auf Versandgutschrift,商品销售收入-Haul-客户拒付,运费税
+Tax On Regulatory Fee,商品销售收入-Haul,监管费税
+Tax On Regulatory Fee,商品销售收入-Haul-退货,监管费税
+Tax on regulatory fee,商品销售收入-Haul,监管费税
+Tax on regulatory fee,商品销售收入-Haul-退货,监管费税
+Tax on regulatory fee,商品销售收入-Haul-客户拒付,监管费税
+Taxe Marketplace Facilitator,商品销售收入-Haul,平台代扣代缴税额
+Taxes retenues sur le site de vente,商品销售收入-Haul,平台代扣代缴税额
+Taxes retenues sur le site de vente,商品销售收入-Haul-退货,平台代扣代缴税额
+Taxes sur la vente des produits,商品销售收入-Haul,商品销售税
+Taxes sur la vente des produits,商品销售收入-Haul-退货,商品销售税
+Taxes sur les crédits cadeaux,商品销售收入-Haul,包装税
+Taxes sur les crédits cadeaux,商品销售收入-Haul-退货,包装税
+Taxes sur les remises promotionnelles,商品销售收入-Haul,折扣税
+Taxes sur les remises promotionnelles,商品销售收入-Haul-退货,折扣税
+Total des réductions,商品销售收入-Haul,折扣金额
+Umsätze,商品销售收入-Haul,商品销售收入
+Umsätze,商品销售收入-Haul-退货,商品销售收入
+Umsätze,商品销售收入-Haul-客户拒付,商品销售收入
+Vendite,商品销售收入-Haul,商品销售收入
+Vendite,商品销售收入-Haul-退货,商品销售收入
+Verkaufsgebühren,商品销售收入-Haul,佣金
+Verkaufsgebühren,商品销售收入-Haul-退货,佣金
+Verkaufsgebühren,商品销售收入-Haul-客户拒付,佣金
+Verzendtegoeden,商品销售收入-Haul,运费销售收入
+Verzendtegoeden,商品销售收入-Haul-退货,运费销售收入
+abonos de envoltorio para regalo,商品销售收入-Haul,包装收入
+abonos de envoltorio para regalo,商品销售收入-Haul-退货,包装收入
+abonos de envío,商品销售收入-Haul,运费销售收入
+abonos de envío,商品销售收入-Haul-退货,运费销售收入
+autre,商品销售收入-Haul,其他
+autre,商品销售收入-Haul-退货,其他
+autres,商品销售收入-Haul,其他
+autres frais de transaction,商品销售收入-Haul,其他交易费用
+autres frais de transaction,商品销售收入-Haul-退货,其他交易费用
+crédits d'expédition,商品销售收入-Haul,运费销售收入
+crédits d'expédition,商品销售收入-Haul-退货,运费销售收入
+crédits d’emballage-cadeau,商品销售收入-Haul,包装收入
+crédits d’expédition,商品销售收入-Haul,运费销售收入
+crédits sur l'emballage cadeau,商品销售收入-Haul,包装收入
+crédits sur l'emballage cadeau,商品销售收入-Haul-退货,包装收入
+devoluciones promocionales,商品销售收入-Haul,折扣金额
+devoluciones promocionales,商品销售收入-Haul-退货,折扣金额
+fba fees,商品销售收入-Haul,运费
+fba fees,商品销售收入-Haul-退货,运费
+fba fees,商品销售收入-Haul-客户拒付,运费
+fba-avgifter,商品销售收入-Haul-退货,运费
+fba-avgifter,商品销售收入-Haul,运费
+fba-vergoedingen,商品销售收入-Haul,运费
+fba-vergoedingen,商品销售收入-Haul-退货,运费
+frais de vente,商品销售收入-Haul,佣金
+frais de vente,商品销售收入-Haul-退货,佣金
+fraktkrediter,商品销售收入-Haul-退货,运费销售收入
+fraktkrediter,商品销售收入-Haul,运费销售收入
+försäljning av produkter,商品销售收入-Haul-退货,商品销售收入
+försäljning av produkter,商品销售收入-Haul,商品销售收入
+försäljningsavgifter,商品销售收入-Haul-退货,佣金
+försäljningsavgifter,商品销售收入-Haul,佣金
+geïnde omzetbelasting,商品销售收入-Haul,已收取的销售税
+geïnde omzetbelasting,商品销售收入-Haul-退货,已收取的销售税
+gift wrap credits,商品销售收入-Haul,包装收入
+gift wrap credits,商品销售收入-Haul-退货,包装收入
+gift wrap credits,商品销售收入-Haul-客户拒付,包装收入
+gift wrap credits tax,商品销售收入-Haul-退货,包装税
+gift wrap credits tax,商品销售收入-Haul-客户拒付,包装税
+giftwrap credits tax,商品销售收入-Haul,包装税
+giftwrap credits tax,商品销售收入-Haul-退货,包装税
+imposta accrediti per le spedizioni,商品销售收入-Haul,运费税
+imposta accrediti per le spedizioni,商品销售收入-Haul-退货,运费税
+imposta sugli sconti promozionali,商品销售收入-Haul,折扣税
+imposta sugli sconti promozionali,商品销售收入-Haul-退货,折扣税
+imposta sui crediti confezione regalo,商品销售收入-Haul,包装税
+imposta sui crediti confezione regalo,商品销售收入-Haul-退货,包装税
+imposta sulle vendite dei prodotti,商品销售收入-Haul,商品销售税
+imposta sulle vendite dei prodotti,商品销售收入-Haul-退货,商品销售税
+impuesto de ventas de productos,商品销售收入-Haul,商品销售税
+impuesto de ventas de productos,商品销售收入-Haul-退货,商品销售税
+impuesto retenido en el sitio web,商品销售收入-Haul,平台代扣代缴税额
+impuesto retenido en el sitio web,商品销售收入-Haul-退货,平台代扣代缴税额
+impuestos de descuentos por promociones,商品销售收入-Haul,折扣税
+impuestos de descuentos por promociones,商品销售收入-Haul-退货,折扣税
+impuestos por abonos de envoltorio para regalo,商品销售收入-Haul,包装税
+impuestos por abonos de envoltorio para regalo,商品销售收入-Haul-退货,包装税
+impuestos por abonos de envío,商品销售收入-Haul,运费税
+impuestos por abonos de envío,商品销售收入-Haul-退货,运费税
+inne,商品销售收入-Haul,其他
+inne,商品销售收入-Haul-退货,其他
+inne opłaty transakcyjne,商品销售收入-Haul,其他交易费用
+inne opłaty transakcyjne,商品销售收入-Haul-退货,其他交易费用
+kampanjrabatter,商品销售收入-Haul-退货,折扣金额
+kampanjrabatter,商品销售收入-Haul,折扣金额
+kredietpunten cadeauverpakking,商品销售收入-Haul,包装收入
+kredietpunten cadeauverpakking,商品销售收入-Haul-退货,包装收入
+krediter för presentinslagning,商品销售收入-Haul-退货,包装收入
+krediter för presentinslagning,商品销售收入-Haul,包装收入
+marketplace withheld tax,商品销售收入-Haul,平台代扣代缴税额
+marketplace withheld tax,商品销售收入-Haul-退货,平台代扣代缴税额
+marketplace withheld tax,商品销售收入-Haul-客户拒付,平台代扣代缴税额
+noty kredytowe za wysyłkę,商品销售收入-Haul,运费销售收入
+noty kredytowe za wysyłkę,商品销售收入-Haul-退货,运费销售收入
+opłaty za fba,商品销售收入-Haul,运费
+opłaty za fba,商品销售收入-Haul-退货,运费
+opłaty za sprzedaż,商品销售收入-Haul,佣金
+opłaty za sprzedaż,商品销售收入-Haul-退货,佣金
+other,商品销售收入-Haul,其他
+other,商品销售收入-Haul-退货,其他
+other,商品销售收入-Haul-客户拒付,其他
+other transaction fees,商品销售收入-Haul,其他交易费用
+other transaction fees,商品销售收入-Haul-退货,其他交易费用
+other transaction fees,商品销售收入-Haul-客户拒付,其他交易费用
+otro,商品销售收入-Haul,其他
+otro,商品销售收入-Haul-退货,其他
+overige,商品销售收入-Haul,其他
+overige,商品销售收入-Haul-退货,其他
+overige transactiekosten,商品销售收入-Haul,其他交易费用
+overige transactiekosten,商品销售收入-Haul-退货,其他交易费用
+pobrany podatek od sprzedaży,商品销售收入-Haul,已收取的销售税
+pobrany podatek od sprzedaży,商品销售收入-Haul-退货,已收取的销售税
+postage credits,商品销售收入-Haul,运费销售收入
+postage credits,商品销售收入-Haul-退货,运费销售收入
+product sales,商品销售收入-Haul,商品销售收入
+product sales,商品销售收入-Haul-退货,商品销售收入
+product sales,商品销售收入-Haul-客户拒付,商品销售收入
+product sales tax,商品销售收入-Haul,商品销售税
+product sales tax,商品销售收入-Haul-退货,商品销售税
+product sales tax,商品销售收入-Haul-客户拒付,商品销售税
+promotiekortingen,商品销售收入-Haul,折扣金额
+promotiekortingen,商品销售收入-Haul-退货,折扣金额
+promotional rebates,商品销售收入-Haul,折扣金额
+promotional rebates,商品销售收入-Haul-退货,折扣金额
+promotional rebates,商品销售收入-Haul-客户拒付,折扣金额
+promotional rebates tax,商品销售收入-Haul,折扣税
+promotional rebates tax,商品销售收入-Haul-退货,折扣税
+promotional rebates tax,商品销售收入-Haul-客户拒付,折扣税
+rabaty promocyjne,商品销售收入-Haul,折扣金额
+rabaty promocyjne,商品销售收入-Haul-退货,折扣金额
+selling fees,商品销售收入-Haul,佣金
+selling fees,商品销售收入-Haul-退货,佣金
+selling fees,商品销售收入-Haul-客户拒付,佣金
+shipping credits,商品销售收入-Haul,运费销售收入
+shipping credits,商品销售收入-Haul-退货,运费销售收入
+shipping credits,商品销售收入-Haul-客户拒付,运费销售收入
+shipping credits tax,商品销售收入-Haul,运费税
+shipping credits tax,商品销售收入-Haul-退货,运费税
+shipping credits tax,商品销售收入-Haul-客户拒付,运费税
+sprzedaż produktów,商品销售收入-Haul,商品销售收入
+sprzedaż produktów,商品销售收入-Haul-退货,商品销售收入
+tarifas de Logística de Amazon,商品销售收入-Haul,运费
+tarifas de Logística de Amazon,商品销售收入-Haul-退货,运费
+tarifas de otras transacciones,商品销售收入-Haul,其他交易费用
+tarifas de otras transacciones,商品销售收入-Haul-退货,其他交易费用
+tarifas de venta,商品销售收入-Haul,佣金
+tarifas de venta,商品销售收入-Haul-退货,佣金
+taxe de ventes prélevée,商品销售收入-Haul,已收取的销售税
+taxe sur les crédits d’expédition,商品销售收入-Haul,运费税
+taxe sur les crédits d’expédition,商品销售收入-Haul-退货,运费税
+trattenuta IVA del marketplace,商品销售收入-Haul,平台代扣代缴税额
+trattenuta IVA del marketplace,商品销售收入-Haul-退货,平台代扣代缴税额
+ventas de productos,商品销售收入-Haul,商品销售收入
+ventas de productos,商品销售收入-Haul-退货,商品销售收入
+ventes de produits,商品销售收入-Haul,商品销售收入
+ventes de produits,商品销售收入-Haul-退货,商品销售收入
+verkoop van producten,商品销售收入-Haul,商品销售收入
+verkoop van producten,商品销售收入-Haul-退货,商品销售收入
+verkoopkosten,商品销售收入-Haul,佣金
+verkoopkosten,商品销售收入-Haul-退货,佣金
+Övrigt,商品销售收入-Haul-退货,其他
+Övrigt,商品销售收入-Haul,其他
+övriga transaktionsavgifter,商品销售收入-Haul-退货,其他交易费用
+övriga transaktionsavgifter,商品销售收入-Haul,其他交易费用
+środki na pokrycie pakowania na prezent,商品销售收入-Haul,包装收入
+środki na pokrycie pakowania na prezent,商品销售收入-Haul-退货,包装收入
+その他,商品销售收入-Haul-退货,其他
+その他,商品销售收入-Haul,其他
+ギフト包装クレジットの税金,商品销售收入-Haul-退货,包装税
+ギフト包装クレジットの税金,商品销售收入-Haul,包装税
+ギフト包装手数料,商品销售收入-Haul-退货,包装收入
+ギフト包装手数料,商品销售收入-Haul,包装收入
+トランザクションに関するその他の手数料,商品销售收入-Haul-退货,其他交易费用
+トランザクションに関するその他の手数料,商品销售收入-Haul,其他交易费用
+プロモーション割引の税金,商品销售收入-Haul-退货,折扣税
+プロモーション割引の税金,商品销售收入-Haul,折扣税
+プロモーション割引額,商品销售收入-Haul-退货,折扣金额
+プロモーション割引額,商品销售收入-Haul,折扣金额
+商品の売上税,商品销售收入-Haul-退货,商品销售税
+商品の売上税,商品销售收入-Haul,商品销售税
+商品売上,商品销售收入-Haul-退货,商品销售收入
+商品売上,商品销售收入-Haul,商品销售收入
+手数料,商品销售收入-Haul-退货,佣金
+手数料,商品销售收入-Haul,佣金
+源泉徴収税を伴うマーケットプレイス,商品销售收入-Haul-退货,平台代扣代缴税额
+源泉徴収税を伴うマーケットプレイス,商品销售收入-Haul,平台代扣代缴税额
+配送料,商品销售收入-Haul-退货,运费销售收入
+配送料,商品销售收入-Haul,运费销售收入
+配送料の税金,商品销售收入-Haul-退货,运费税
+配送料の税金,商品销售收入-Haul,运费税
