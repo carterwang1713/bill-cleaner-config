@@ -1,12 +1,11 @@
 {
-  "version": "1.1.0",
-  "release_date": "2026-04-20",
+  "version": "1.2.0",
+  "release_date": "2026-05-12",
   "download_url": "https://github.com/carterwang1713/bill-cleaner-config/releases",
   "changelog": [
-    "新增绩效维度映射表（performance_dimension_mapping.csv）",
-    "支持账单字段序列码匹配",
-    "支持绩效表对应维度匹配",
-    "优化清洗流程，增加Step 10绩效维度匹配"
+    "修复pandas StringDtype列NaN值未正确转为字符串导致匹配辅助列为NaN的bug",
+    "绩效维度未匹配报告中增加匹配辅助列原始值展示",
+    "优化报告展示：匹配key后追加匹配辅助列信息，便于排查未分类根因"
   ],
   "min_version": "1.0.0",
   "force_update": false
