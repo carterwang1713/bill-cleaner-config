@@ -513,17 +513,17 @@ class MainWindow:
         filter_frame = ttk.Frame(parent, padding=10)
         filter_frame.pack(fill=tk.X)
         
-        ttk.Label(filter_frame, text="站点:", font=("Microsoft YaHei", 9)).pack(side=tk.LEFT)
-        self.site_var = tk.StringVar()
-        self.site_combo = ttk.Combobox(filter_frame, textvariable=self.site_var, width=10, state='readonly')
-        self.site_combo.pack(side=tk.LEFT, padx=5)
-        self.site_combo.bind('<<ComboboxSelected>>', lambda e: self._update_period_options())
-        
-        ttk.Label(filter_frame, text="结算周期:", font=("Microsoft YaHei", 9)).pack(side=tk.LEFT, padx=(20, 0))
+        ttk.Label(filter_frame, text="结算周期:", font=("Microsoft YaHei", 9)).pack(side=tk.LEFT)
         self.period_var = tk.StringVar()
         self.period_combo = ttk.Combobox(filter_frame, textvariable=self.period_var, width=12, state='readonly')
         self.period_combo.pack(side=tk.LEFT, padx=5)
-        self.period_combo.bind('<<ComboboxSelected>>', lambda e: self._update_shop_options())
+        self.period_combo.bind('<<ComboboxSelected>>', lambda e: self._update_site_options())
+        
+        ttk.Label(filter_frame, text="站点:", font=("Microsoft YaHei", 9)).pack(side=tk.LEFT, padx=(20, 0))
+        self.site_var = tk.StringVar()
+        self.site_combo = ttk.Combobox(filter_frame, textvariable=self.site_var, width=10, state='readonly')
+        self.site_combo.pack(side=tk.LEFT, padx=5)
+        self.site_combo.bind('<<ComboboxSelected>>', lambda e: self._update_shop_options())
         
         ttk.Label(filter_frame, text="店铺:", font=("Microsoft YaHei", 9)).pack(side=tk.LEFT, padx=(20, 0))
         self.shop_var = tk.StringVar()
@@ -1512,29 +1512,29 @@ class MainWindow:
     
     def refresh_report_options(self):
         """刷新报表筛选选项"""
-        # 获取站点列表
-        sites = self.db.get_sites()
-        self.site_combo['values'] = sites
+        # 获取结算周期列表
+        periods = self.db.get_periods()
+        self.period_combo['values'] = periods
         
-        if sites:
-            self.site_combo.set(sites[0])
-            self._update_period_options()
+        if periods:
+            self.period_combo.set(periods[0])
+            self._update_site_options()
     
-    def _update_period_options(self):
-        """更新结算周期选项"""
-        site = self.site_var.get()
-        if site:
-            periods = self.db.get_periods(site)
-            self.period_combo['values'] = periods
-            if periods:
-                self.period_combo.set(periods[0])
+    def _update_site_options(self):
+        """更新站点选项（选中结算周期后联动）"""
+        period = self.period_var.get()
+        if period:
+            sites = self.db.get_sites_by_period(period)
+            self.site_combo['values'] = sites
+            if sites:
+                self.site_combo.set(sites[0])
                 self._update_shop_options()
     
     def _update_shop_options(self):
         """更新店铺选项"""
-        site = self.site_var.get()
         period = self.period_var.get()
-        if site and period:
+        site = self.site_var.get()
+        if period and site:
             shops = self.db.get_shops(site, period)
             self.shop_combo['values'] = shops
             if shops:

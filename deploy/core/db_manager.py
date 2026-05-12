@@ -872,6 +872,30 @@ class DatabaseManager:
         
         return sites
     
+    def get_sites_by_period(self, period: str) -> List[str]:
+        """
+        获取指定结算周期的站点列表
+        
+        Args:
+            period: 结算周期
+            
+        Returns:
+            站点列表
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('''
+            SELECT DISTINCT site FROM settlements 
+            WHERE settlement_period = ? 
+            ORDER BY site
+        ''', (period,))
+        
+        sites = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        
+        return sites
+    
     def get_periods(self, site: str = None) -> List[str]:
         """
         获取结算周期列表
