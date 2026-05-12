@@ -53,6 +53,26 @@ for d in [USER_MAPPINGS_DIR, USER_OUTPUT_DIR, LOGS_DIR, INPUT_DIR]:
 # 添加路径
 sys.path.insert(0, str(APP_DIR))
 
+# v1.3.2: frozen模式下，优先从文件系统加载core模块（而非exe内部）
+# 这样替换core/*.py文件即可生效，无需重新打包exe
+if getattr(sys, 'frozen', False):
+    import importlib.util
+    _core_dir = APP_DIR / 'core'
+    if _core_dir.is_dir():
+        # 遍历core目录下的.py文件，用importlib从文件系统加载
+        for _py_file in sorted(_core_dir.glob('*.py')):
+            _mod_name = f'core.{_py_file.stem}'
+            if _py_file.stem == '__init__':
+                _mod_name = 'core'
+            try:
+                _spec = importlib.util.spec_from_file_location(_mod_name, str(_py_file))
+                if _spec and _spec.loader:
+                    _module = importlib.util.module_from_spec(_spec)
+                    sys.modules[_mod_name] = _module
+                    _spec.loader.exec_module(_module)
+            except Exception as _e:
+                pass  # 加载失败则回退到exe内置模块
+
 try:
     from core.auth import AuthManager
     from core.config_sync import sync_configs_on_startup
