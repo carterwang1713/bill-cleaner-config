@@ -377,6 +377,61 @@ class DatabaseManager:
             logger.error(f"删除数据失败: {e}")
             return False
     
+    def delete_settlements_by_period(self, settlement_period: str) -> int:
+        """
+        删除指定结算周期下所有数据
+        
+        Args:
+            settlement_period: 结算周期
+            
+        Returns:
+            删除的记录数
+        """
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            for table in ['bills_2d', 'bills_2d_local', 'bills_multi', 'settlements']:
+                cursor.execute(f'DELETE FROM {table} WHERE settlement_period = ?', (settlement_period,))
+            
+            deleted = cursor.execute('SELECT changes()').fetchone()[0]
+            conn.commit()
+            conn.close()
+            
+            logger.info(f"按周期删除数据: {settlement_period}")
+            return deleted
+        except Exception as e:
+            logger.error(f"按周期删除数据失败: {e}")
+            return 0
+    
+    def delete_settlements_by_site_period(self, site: str, settlement_period: str) -> int:
+        """
+        删除指定站点+结算周期下所有数据
+        
+        Args:
+            site: 站点
+            settlement_period: 结算周期
+            
+        Returns:
+            删除的记录数
+        """
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            for table in ['bills_2d', 'bills_2d_local', 'bills_multi', 'settlements']:
+                cursor.execute(f'DELETE FROM {table} WHERE site = ? AND settlement_period = ?', (site, settlement_period))
+            
+            deleted = cursor.execute('SELECT changes()').fetchone()[0]
+            conn.commit()
+            conn.close()
+            
+            logger.info(f"按站点+周期删除数据: {site} {settlement_period}")
+            return deleted
+        except Exception as e:
+            logger.error(f"按站点+周期删除数据失败: {e}")
+            return 0
+    
     def import_dataframe(self, df: pd.DataFrame, site: str, settlement_period: str, 
                          source_file: str, shop_name: str = None) -> Tuple[bool, str]:
         """

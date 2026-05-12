@@ -1115,53 +1115,62 @@ class MainWindow:
         self.file_tree.tag_configure('✗ 失败', foreground='red')
         self.file_tree.tag_configure('✓ 已导入', foreground='gray')
         
-        # 加载已导入列表 - 三级树形结构
+        # 加载已导入列表 - 三级树形结构：结算周期→站点→店铺
         settlements = self.db.get_settlements_list()
         
-        # 按站点分组，用于统计每个站点的数据条数
-        site_counts = {}  # site -> count
-        shop_counts = {}   # (site, shop) -> count
+        # 按三级结构统计数量
+        period_counts = {}    # period -> count
+        site_counts = {}      # (period, site) -> count
+        shop_counts = {}      # (period, site, shop) -> count
+        shop_details = {}     # (period, site, shop) -> [detail texts]
         
-        # 先统计各层级数量
         for s in settlements:
+            period = s['settlement_period']
             site = s['site']
             shop = s.get('shop_name', '') or '默认'
-            site_counts[site] = site_counts.get(site, 0) + 1
-            shop_counts[(site, shop)] = shop_counts.get((site, shop), 0) + 1
+            row_count = s['row_count']
+            cleaned_at = s['cleaned_at'][:16] if s['cleaned_at'] else ''
+            
+            period_counts[period] = period_counts.get(period, 0) + 1
+            site_counts[(period, site)] = site_counts.get((period, site), 0) + 1
+            shop_counts[(period, site, shop)] = shop_counts.get((period, site, shop), 0) + 1
+            
+            key = (period, site, shop)
+            if key not in shop_details:
+                shop_details[key] = []
+            shop_details[key].append(f"行数: {row_count}  |  导入时间: {cleaned_at}")
         
         # 构建树形结构
-        site_nodes = {}   # site -> node_id
-        shop_nodes = {}   # (site, shop) -> node_id
-        
-        for s in settlements:
-            site = s['site']
-            shop = s.get('shop_name', '') or '默认'
-            period = s['settlement_period']
-            row_count = s['row_count']
-            cleaned_at = s['cleaned_at'][:16] if s['cleaned_at'] else ''  # 截取日期时间
+        for period in sorted(period_counts.keys(), reverse=True):
+            period_node_id = f"period_{period}"
+            period_text = f"{period} ({period_counts[period]})"
+            self.imported_tree.insert('', 'end', iid=period_node_id, text=period_text, tags=('period',))
             
-            # 第一层：站点节点
-            if site not in site_nodes:
-                site_node_id = f"site_{site}"
-                site_text = f"{site} ({site_counts[site]})"
-                self.imported_tree.insert('', 'end', iid=site_node_id, text=site_text)
-                site_nodes[site] = site_node_id
-            
-            # 第二层：店铺节点
-            if (site, shop) not in shop_nodes:
-                shop_node_id = f"shop_{site}_{shop}"
-                shop_text = f"{shop} ({shop_counts[(site, shop)]})"
-                self.imported_tree.insert(site_nodes[site], 'end', iid=shop_node_id, text=shop_text)
-                shop_nodes[(site, shop)] = shop_node_id
-            
-            # 第三层：具体数据行
-            data_node_id = f"data_{site}_{shop}_{period}"
-            data_text = f"  结算周期: {period}  |  行数: {row_count}  |  导入时间: {cleaned_at}"
-            self.imported_tree.insert(shop_nodes[(site, shop)], 'end', iid=data_node_id, text=data_text)
+            # 该周期下的站点
+            period_sites = sorted(set(s for (p, s) in site_counts.keys() if p == period))
+            for site in period_sites:
+                site_node_id = f"site_{period}_{site}"
+                site_text = f"{site} ({site_counts[(period, site)]})"
+                self.imported_tree.insert(period_node_id, 'end', iid=site_node_id, text=site_text, tags=('site',))
+                
+                # 该站点下的店铺
+                period_site_shops = sorted(set(sh for (p, s, sh) in shop_counts.keys() if p == period and s == site))
+                for shop in period_site_shops:
+                    shop_node_id = f"shop_{period}_{site}_{shop}"
+                    shop_text = f"{shop} ({shop_counts[(period, site, shop)]})"
+                    self.imported_tree.insert(site_node_id, 'end', iid=shop_node_id, text=shop_text, tags=('shop',))
+                    
+                    # 店铺下的具体数据行
+                    for idx, detail in enumerate(shop_details.get((period, site, shop), [])):
+                        data_node_id = f"data_{period}_{site}_{shop}_{idx}"
+                        data_text = f"  {detail}"
+                        self.imported_tree.insert(shop_node_id, 'end', iid=data_node_id, text=data_text, tags=('data',))
         
         # 设置树形结构样式
-        self.imported_tree.tag_configure('site', font=('Microsoft YaHei', 10, 'bold'))
+        self.imported_tree.tag_configure('period', font=('Microsoft YaHei', 10, 'bold'))
+        self.imported_tree.tag_configure('site', font=('Microsoft YaHei', 9, 'bold'))
         self.imported_tree.tag_configure('shop', font=('Microsoft YaHei', 9))
+        self.imported_tree.tag_configure('data', font=('Microsoft YaHei', 8))
     
     def _on_file_tree_click(self, event):
         """点击文件列表时，判断是否点击了复选框列，切换勾选状态"""
@@ -1423,44 +1432,81 @@ class MainWindow:
             messagebox.showwarning("提示", "请先选择要删除的数据")
             return
         
-        # 检查是否选择了第三层节点（具体数据行）
-        data_items = []
-        non_data_items = []
+        period_items = []   # 一级：结算周期
+        site_items = []     # 二级：站点 (period, site)
+        shop_items = []     # 三级：店铺 (period, site, shop)
+        data_items = []     # 四级：具体数据行
         
         for item in selected:
-            item_id = item  # selection() 返回的就是 iid
-            # 判断是否为第三层节点：data_{site}_{shop}_{period}
-            if item_id and item_id.startswith('data_'):
-                # 解析节点id: data_{site}_{shop}_{period}
-                parts = item_id.split('_', 3)  # 分成4部分: data, site, shop, period
-                if len(parts) == 4:
-                    site = parts[1]
-                    shop = parts[2]
-                    period = parts[3]
-                    data_items.append((site, period, shop))
-            else:
-                non_data_items.append(item_id or '节点')
+            item_id = item
+            if item_id and item_id.startswith('period_'):
+                # 一级节点：period_{period}
+                period = item_id[len('period_'):]
+                period_items.append(period)
+            elif item_id and item_id.startswith('site_'):
+                # 二级节点：site_{period}_{site}
+                parts = item_id[len('site_'):].split('_', 1)
+                if len(parts) == 2:
+                    period, site = parts
+                    site_items.append((period, site))
+            elif item_id and item_id.startswith('shop_'):
+                # 三级节点：shop_{period}_{site}_{shop}
+                parts = item_id[len('shop_'):].split('_', 2)
+                if len(parts) == 3:
+                    period, site, shop = parts
+                    shop_items.append((period, site, shop))
+            elif item_id and item_id.startswith('data_'):
+                # 四级节点：data_{period}_{site}_{shop}_{idx}
+                parts = item_id[len('data_'):].rsplit('_', 1)
+                if len(parts) == 2:
+                    shop_key, idx = parts
+                    shop_parts = shop_key.split('_', 2)
+                    if len(shop_parts) == 3:
+                        period, site, shop = shop_parts
+                        data_items.append((period, site, shop))
         
-        # 如果有非第三层节点被选中，给出提示
-        if non_data_items:
-            messagebox.showwarning("提示", f"请选择具体数据行进行删除\n（不能直接删除站点或店铺节点）")
+        # 构建删除列表和确认信息
+        delete_ops = []  # (type, label)
+        
+        for period in period_items:
+            delete_ops.append(('period', f"结算周期 {period} 下所有数据", period, None, None))
+        
+        for period, site in site_items:
+            delete_ops.append(('site', f"{period} / {site} 下所有店铺数据", period, site, None))
+        
+        for period, site, shop in shop_items:
+            delete_ops.append(('shop', f"{period} / {site} / {shop}", period, site, shop))
+        
+        for period, site, shop in set(data_items):
+            delete_ops.append(('shop', f"{period} / {site} / {shop}", period, site, shop))
+        
+        if not delete_ops:
+            messagebox.showwarning("提示", "请选择要删除的数据")
             return
         
-        if not data_items:
-            messagebox.showwarning("提示", "请选择具体数据行进行删除")
+        # 构建确认信息
+        confirm_lines = [f"确定要删除以下 {len(delete_ops)} 项数据吗？\n"]
+        for dtype, label, _, _, _ in delete_ops:
+            type_names = {'period': '🔄 按结算周期', 'site': '🌐 按站点', 'shop': '🏪 按店铺'}
+            confirm_lines.append(f"  {type_names.get(dtype, '')} {label}")
+        
+        if not messagebox.askyesno("确认删除", '\n'.join(confirm_lines)):
             return
         
-        # 去重（同一个结算周期可能显示多次）
-        data_items_unique = list(set(data_items))
+        # 执行删除
+        for dtype, label, period, site, shop in delete_ops:
+            if dtype == 'period':
+                count = self.db.delete_settlements_by_period(period)
+                self._log_import(f"删除结算周期 {period} 下所有数据（{count} 条）")
+            elif dtype == 'site':
+                count = self.db.delete_settlements_by_site_period(site, period)
+                self._log_import(f"删除 {period}/{site} 下所有数据（{count} 条）")
+            elif dtype == 'shop':
+                shop_name = shop if shop != '默认' else None
+                self.db.delete_settlement(site, period, shop_name)
+                self._log_import(f"删除: {period}/{site}/{shop}")
         
-        if messagebox.askyesno("确认", f"确定要删除选中的 {len(data_items_unique)} 条数据吗？"):
-            for site, period, shop_name in data_items_unique:
-                # shop_name 为 "默认" 时传给 None
-                self.db.delete_settlement(site, period, shop_name if shop_name != '默认' else None)
-                shop_str = f" {shop_name}" if shop_name else ""
-                self._log_import(f"删除: {site} {period}{shop_str}")
-            
-            self.refresh_file_list()
+        self.refresh_file_list()
     
     # ==================== 报表相关方法 ====================
     
