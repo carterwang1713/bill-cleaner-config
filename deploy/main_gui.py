@@ -1220,9 +1220,9 @@ class MainWindow:
                 values = self.file_tree.item(item, 'values')
                 checked_folders.append({
                     'folder_name': folder_name,
-                    'site': values[1],
-                    'period': values[2],
-                    'shop_name': values[3],
+                    'site': values[2],
+                    'period': values[3],
+                    'shop_name': values[4],
                     'import_status': values[5]
                 })
         
