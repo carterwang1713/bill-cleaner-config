@@ -774,10 +774,11 @@ class DatabaseManager:
             '''
             df = pd.read_sql_query(query, conn, params=(site, settlement_period, shop_name))
         else:
+            # shop_name为空时，不限店铺，查询该站点+周期下所有数据
             query = '''
                 SELECT sequence_code, chinese_meaning, SUM(amount) as total
                 FROM bills_2d_local
-                WHERE site = ? AND settlement_period = ? AND (shop_name IS NULL OR shop_name = '')
+                WHERE site = ? AND settlement_period = ?
                 GROUP BY sequence_code, chinese_meaning
                 ORDER BY sequence_code
             '''
