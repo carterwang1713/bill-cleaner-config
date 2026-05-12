@@ -1926,5 +1926,9 @@
   "Aanpassing/Mislukte vergoeding_补偿发放失败调整": {
     "账单字段序列码": "19",
     "绩效表对应维度": "索赔"
+  },
+  "Adjustment/FBA Inventory Reimbursement - Damaged:Outbound_FBA库存赔偿-出运损毁": {
+    "账单字段序列码": "5",
+    "绩效表对应维度": "索赔"
   }
 }

@@ -1,8 +1,12 @@
 {
-  "version": "1.3.0",
-  "release_date": "2026-05-12",
+  "version": "1.3.1",
+  "release_date": "2026-05-13",
   "download_url": "https://github.com/carterwang1713/bill-cleaner-config/releases",
   "changelog": [
+    "v1.3.1: 修复规则表2的{type}模板行问题，补充US和其他站点绩效维度映射",
+    "删除规则1中{type}/Coupon Redemption Fee模板行（代码未实现模板替换导致输出字面量，且优先于规则18命中）",
+    "新增US站点：其他调整→其他调整、FBA库存赔偿-出运损毁绩效维度映射",
+    "新增全部站点：FBA库存赔偿-出运损毁→索赔绩效维度映射",
     "v1.3.0: 数据管理页面改进",
     "修复'导入全部'按钮无反应的bug（刷新列表导致迭代器失效）",
     "新增文件夹复选框功能，可勾选要导入的文件夹",
