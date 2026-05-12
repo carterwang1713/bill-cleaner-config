@@ -38,7 +38,6 @@ comunidad autónoma de procedencia del pedido,下单州,西班牙语,2026-04-17
 Costi del servizio Logistica di Amazon,运费,意大利语,2026-04-17
 crédits d'emballage-cadeau,包装收入,法语,2026-04-17
 crédits d'expédition,运费销售收入,法语,2026-04-17
-crédits d'expédition,运费销售收入,法语,2026-04-17
 crédits sur l'emballage cadeau,包装收入,法语,2026-04-17
 data/godzina,结算日期,波兰语,2026-04-17
 Data/Ora:,结算日期,意大利语,2026-04-17
@@ -245,8 +244,6 @@ web de Amazon,站点,西班牙语,2026-04-17
 source_file,数据源,英语,2026-04-17
 source_directory,文件位置,英语,2026-04-17
 country_code,销售区域,英语,2026-04-17
-crédits d'expédition,运费销售收入,法语,2026-04-17
-crédits d'emballage-cadeau,包装收入,法语,2026-04-17
 Transaction Status,交易状态,英语,2026-04-21
 Transaction Release Date,交易放款日期,英语,2026-04-21
 Transaction status,交易状态,英语,2026-04-21
@@ -264,5 +261,5 @@ Transactiestatus,交易状态,荷兰语,2026-05-12
 Publicatiedatum van transactie,交易放款日期,荷兰语,2026-05-12
 Status transakcji,交易状态,波兰语,2026-05-12
 Data zrealizowania transakcji,交易放款日期,波兰语,2026-05-12
-Transaktionsstatus,交易状态,瑞典语,2026-05-12
 Transaktionens utgivningsdatum,交易放款日期,瑞典语,2026-05-12
+Date de sortie de la transaction,交易放款日期,法语,2026-05-12
