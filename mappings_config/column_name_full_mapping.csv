@@ -1,4 +1,4 @@
-原始列名,中文意思,语言,添加时间
+﻿原始列名,中文意思,语言,添加时间
 aantal,销量,荷兰语,2026-04-17
 abonos de envío,运费销售收入,西班牙语,2026-04-17
 abonos de envoltorio para regalo,包装收入,西班牙语,2026-04-17
@@ -250,3 +250,5 @@ crédits d'emballage-cadeau,包装收入,法语,2026-04-17
 Transaction Status,交易状态,英语,2026-04-21
 Transaction Release Date,交易放款日期,英语,2026-04-21
 Transaction status,交易状态,英语,2026-04-21
+Transaktionsstatus,交易状态,德语,2026-05-12
+Freigabedatum der Transaktion,交易放款日期,德语,2026-05-12
