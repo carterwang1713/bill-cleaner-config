@@ -469,7 +469,7 @@ class DatabaseManager:
             records = list(zip(
                 [site] * len(df),
                 [settlement_period] * len(df),
-                [shop_name] if shop_name is None else [shop_name] * len(df),
+                [shop_name] * len(df),
                 _to_native(df['账单字段序列码'].values) if '账单字段序列码' in df.columns else [None] * len(df),
                 df['中文意思'].fillna('').values.tolist() if '中文意思' in df.columns else [''] * len(df),
                 _to_native(df['金额'].fillna(0).values) if '金额' in df.columns else [0] * len(df),
@@ -542,7 +542,7 @@ class DatabaseManager:
             records = list(zip(
                 [site] * len(df),
                 [settlement_period] * len(df),
-                [shop_name] if shop_name is None else [shop_name] * len(df),
+                [shop_name] * len(df),
                 _to_native(df['账单字段序列码'].values) if '账单字段序列码' in df.columns else [None] * len(df),
                 df['中文意思'].fillna('').values.tolist() if '中文意思' in df.columns else [''] * len(df),
                 _to_native(df['金额'].fillna(0).values) if '金额' in df.columns else [0] * len(df),
